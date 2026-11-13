@@ -1,0 +1,985 @@
+{
+  "common": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "copyFailed": "Couldn't copy. Select the text and press Ctrl+C.",
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save",
+    "saving": "Saving…",
+    "saveFailed": "Couldn't save. Try again.",
+    "retry": "Try again",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "viewAll": "View all",
+    "optional": "(optional)",
+    "delete": "Delete",
+    "deleting": "Deleting…",
+    "comingSoon": "Coming soon",
+    "never": "Never used",
+    "none": "—",
+    "toolCount": "{count, plural, one {# tool} other {# tools}}",
+    "sourceCount": "{count, plural, one {# source} other {# sources}}",
+    "milliseconds": "{value} ms",
+    "duration": {
+      "seconds": "{count, plural, one {# second} other {# seconds}}",
+      "minutes": "{count, plural, one {# minute} other {# minutes}}",
+      "hours": "{count, plural, one {# hour} other {# hours}}",
+      "days": "{count, plural, one {# day} other {# days}}"
+    },
+    "mockNotice": "Preview build — all data is simulated"
+  },
+  "meta": {
+    "description": "Connect ChatGPT, Claude and Cursor to Thai data through plugins, with sources and timestamps.",
+    "landing": "Reliable Thai data for your AI",
+    "pricing": "Pricing",
+    "catalog": "Data sources",
+    "docs": "Docs",
+    "login": "Sign in",
+    "onboarding": "Get started",
+    "overview": "Overview",
+    "sources": "Sources",
+    "playground": "Playground",
+    "logs": "Call logs",
+    "credentials": "Credentials",
+    "team": "Team",
+    "usage": "Usage & plan",
+    "settings": "Settings",
+    "notFound": "Page not found"
+  },
+  "nav": {
+    "overview": "Overview",
+    "sources": "Sources",
+    "playground": "Playground",
+    "logs": "Call logs",
+    "credentials": "Credentials",
+    "team": "Team",
+    "usage": "Usage & plan",
+    "settings": "Settings",
+    "marketing": {
+      "sources": "Sources",
+      "pricing": "Pricing",
+      "docs": "Docs"
+    },
+    "footer": {
+      "docs": "Docs",
+      "github": "GitHub",
+      "status": "Status",
+      "terms": "Terms",
+      "privacy": "Privacy"
+    },
+    "login": "Sign in",
+    "startFree": "Start free",
+    "dashboard": "Dashboard",
+    "skipToContent": "Skip to content",
+    "mainNavigation": "Main navigation",
+    "openNavigation": "Open navigation",
+    "home": "Home",
+    "github": "Open GitHub in a new tab"
+  },
+  "shell": {
+    "search": "Search",
+    "searchPlaceholder": "Search pages, sources or tools",
+    "commandEmpty": "No results. Try another term.",
+    "commandPages": "Pages",
+    "commandSources": "Sources",
+    "commandTools": "Tools",
+    "commandTitle": "Search and jump to a page",
+    "docs": "Docs",
+    "planBadge": "{plan} plan",
+    "userMenu": "User menu",
+    "signedInWith": "Signed in with {provider}",
+    "signOut": "Sign out",
+    "workspaces": "Workspaces",
+    "switchWorkspace": "Switch workspace",
+    "workspaceSwitched": "Switched to {name} (preview data stays the same)",
+    "language": "Language"
+  },
+  "locale": {
+    "th": "ไทย",
+    "en": "English",
+    "switch": "Change language"
+  },
+  "clients": {
+    "claude": "Claude",
+    "chatgpt": "ChatGPT",
+    "cursor": "Cursor",
+    "api": "API",
+    "tabs": {
+      "claude": "Claude",
+      "chatgpt": "ChatGPT",
+      "cursor": "Cursor"
+    },
+    "steps": {
+      "chatgpt": {
+        "one": "Open the Plugins directory in ChatGPT and choose {product}.",
+        "two": "Install and connect your account, then select your workspace.",
+        "three": "Review access and select the plugin with @ in a chat to ask your question."
+      },
+      "claude": {
+        "one": "Open Claude → Customize → Plugins and find {product} in the directory.",
+        "two": "Select Add, connect your account and choose your workspace.",
+        "three": "Enable the plugin and your data sources, then ask a question in Claude."
+      },
+      "cursor": {
+        "one": "Open Cursor → Customize and find {product} in the Marketplace.",
+        "two": "Select Install, choose user or project scope and connect your account.",
+        "three": "Check that the plugin is enabled, then use its tools from Agent."
+      }
+    }
+  },
+  "sourceMeta": {
+    "category": {
+      "utilities": "Utilities",
+      "government": "Government",
+      "business": "Business",
+      "open_data": "Open data",
+      "geography": "Geography",
+      "finance": "Finance",
+      "environment": "Environment",
+      "logistics": "Logistics",
+      "messaging": "Messaging"
+    },
+    "status": {
+      "operational": "Operational",
+      "degraded": "Degraded",
+      "down": "Down"
+    },
+    "license": {
+      "commercial_ok": "Commercial use OK",
+      "pending_permission": "Pending permission",
+      "byok": "Bring your own key"
+    },
+    "licenseHelp": {
+      "commercial_ok": "Published under terms that allow commercial use with attribution.",
+      "pending_permission": "We're requesting permission from the data owner. It opens once confirmed.",
+      "byok": "Called with your own account and key, under your account's terms."
+    },
+    "allCategories": "All categories"
+  },
+  "plans": {
+    "name": {
+      "free": "Free",
+      "starter": "Starter",
+      "pro": "Pro",
+      "enterprise": "Enterprise"
+    },
+    "summary": {
+      "free": "Try computed tools and basic government data.",
+      "starter": "For small businesses using AI every day.",
+      "pro": "For teams that need higher quotas and longer history.",
+      "enterprise": "Connect your ERP, databases and internal systems to AI."
+    },
+    "perMonth": "/month",
+    "free": "Free",
+    "custom": "Custom",
+    "calls": "{count} calls/month",
+    "rateLimit": "{count} calls/min",
+    "seats": "{count, plural, one {# seat} other {# seats}}",
+    "retention": "{days} days",
+    "recommended": "Recommended",
+    "current": "Current plan",
+    "support": {
+      "community": "Community (GitHub)",
+      "email": "Email",
+      "priority": "Email, reply within 1 business day",
+      "dedicated": "Dedicated manager + SLA"
+    },
+    "feature": {
+      "computed_sources": "Computed tools (IDs, tax, holidays)",
+      "public_sources": "Government and open data",
+      "byok_sources": "Bring-your-own-key sources",
+      "playground": "Playground",
+      "call_logs": "Call logs with input/output",
+      "line_alerts": "LINE alerts",
+      "team": "Team and roles",
+      "internal_systems": "Internal systems (ERP, databases)",
+      "sla": "99.9% SLA",
+      "dedicated_support": "Dedicated account manager"
+    }
+  },
+  "landing": {
+    "hero": {
+      "eyebrow": "DEVELOPER INFRASTRUCTURE",
+      "title": "Connect AI to Thai data in minutes",
+      "subtitle": "Build, manage and deploy MCP servers in one place. Connect government data and business APIs to your AI workflows.",
+      "primaryCta": "Start building for free",
+      "secondaryCta": "Read the docs",
+      "note": "Start with your workspace. Connect your AI through a plugin.",
+      "deploymentLabel": "Deployment options",
+      "deployment": {
+        "openSource": "Open Source",
+        "selfHosted": "Self-hosted",
+        "managedCloud": "Managed Cloud"
+      },
+      "platforms": "Designed for ChatGPT, Claude and Cursor"
+    },
+    "demo": {
+      "label": "Example conversation in Claude",
+      "you": "You",
+      "assistant": "Claude",
+      "question": "Can you check company {id}? Is it still active, and what's its registered capital?",
+      "toolCall": "Tool call",
+      "toolResult": "Tool result",
+      "answer": "Siam Digital Accounting Co., Ltd. is still active, with registered capital of 5,000,000 baht. It was registered on 14 March 2018 and is based in Watthana, Bangkok.",
+      "source": "Source: Department of Business Development (Open-DBD)",
+      "fetchedAt": "Fetched 13 Nov 2026, 10:42",
+      "latency": "184 ms"
+    },
+    "comparison": {
+      "title": "Why not just let the AI search the web?",
+      "description": "Web search is fine for general questions. Accounting, HR and automation need data you can verify.",
+      "aspect": "Aspect",
+      "hub": "{product}",
+      "web": "AI web search",
+      "rows": {
+        "source": {
+          "label": "Source",
+          "hub": "Fetched directly from the agency or provider",
+          "web": "Pages copied from other pages, possibly stale or wrong"
+        },
+        "timestamp": {
+          "label": "Freshness",
+          "hub": "Every answer carries its source and fetch time",
+          "web": "Usually unclear when the data was updated"
+        },
+        "batch": {
+          "label": "Bulk work",
+          "hub": "Validate 500 tax IDs in one go",
+          "web": "One search at a time, slow and inconsistent"
+        },
+        "automation": {
+          "label": "Automation",
+          "hub": "Same structured JSON every time",
+          "web": "Free text you have to parse yourself"
+        },
+        "internal": {
+          "label": "Internal data",
+          "hub": "Connect your ERP and databases (Enterprise)",
+          "web": "Not reachable"
+        }
+      }
+    },
+    "sources": {
+      "title": "Available sources",
+      "description": "We only enable sources that are cleared for commercial use. Sources awaiting permission are listed but can't be enabled yet.",
+      "viewAll": "View all sources",
+      "columns": {
+        "category": "Category",
+        "source": "Source",
+        "tools": "Tools",
+        "license": "License"
+      }
+    },
+    "steps": {
+      "title": "Start in 3 steps",
+      "description": "Choose a platform, connect your workspace and start asking.",
+      "one": {
+        "title": "Sign in with LINE or Google",
+        "description": "Create a workspace to manage data sources, access and usage."
+      },
+      "two": {
+        "title": "Install the plugin in your AI",
+        "description": "Choose ChatGPT, Claude or Cursor and connect the plugin to your workspace."
+      },
+      "three": {
+        "title": "Choose sources and start asking",
+        "description": "Turn sources on or off in the dashboard. Your AI only sees enabled tools."
+      }
+    },
+    "plans": {
+      "title": "Plans",
+      "description": "Start free and upgrade when you rely on it. Prices exclude 7% VAT.",
+      "viewPricing": "Compare all plans"
+    },
+    "openSource": {
+      "title": "Adapters are open source",
+      "description": "The code that fetches each source is on GitHub for you to audit or self-host. The hosted service handles quotas, caching, credentials and call history.",
+      "cta": "View adapters on GitHub"
+    },
+    "playground": {
+        "sectionEyebrow": "TRY BEFORE YOU BUILD",
+        "sectionTitle": "Try the tools instantly",
+        "sectionDescription": "Choose a tool, enter parameters, and explore the result your AI would receive using clearly labeled sample data.",
+      "title": "MCP Playground",
+      "environment": "sandbox / thai-mcp-hub",
+      "badge": "Sample data",
+      "tool": "Select a tool",
+      "execute": "Execute",
+      "result": "Result",
+      "ready": "Sample preview",
+      "running": "Simulating execution",
+      "success": "Success · demo",
+      "failed": "Demo execution failed",
+      "raw": "View raw JSON",
+      "sampleSource": "Source: sample sandbox",
+      "latency": "{ms} ms",
+      "notice": "Simulated data, not a real API response. Does not count toward quota or appear in dashboard logs.",
+      "empty": "No demo tools available",
+      "emptyHelp": "Open the documentation for setup guidance or try again later.",
+      "errorHelp": "Use the example values or correct the parameters, then select Execute again.",
+      "company": "Sample company record",
+      "bahtText": "Amount in Thai words",
+      "calendar": "Sample working-day check",
+      "workday": "Working day",
+      "holiday": "Non-working day",
+      "fields": {
+        "juristicId": "Registration number",
+        "status": "Status",
+        "capital": "Registered capital",
+        "amount": "Amount",
+        "date": "Date",
+        "reason": "Details"
+      },
+      "docs": "Read the docs"
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "description": "Pick a plan by monthly call volume. Change plans any time. Prices exclude 7% VAT.",
+    "compareTitle": "Compare plans",
+    "feature": "Feature",
+    "rows": {
+      "price": "Monthly price",
+      "calls": "Calls",
+      "rateLimit": "Rate limit",
+      "seats": "Team members",
+      "retention": "Call log retention",
+      "support": "Support"
+    },
+    "included": "Included",
+    "notIncluded": "Not included",
+    "cta": {
+      "free": "Start free",
+      "starter": "Choose Starter",
+      "pro": "Choose Pro",
+      "enterprise": "Contact sales"
+    },
+    "faqTitle": "Frequently asked questions",
+    "faq": {
+      "count": {
+        "q": "How are calls counted?",
+        "a": "One call is one tool invocation by your AI, whether served from cache or the live source. Calls rejected for invalid input don't count."
+      },
+      "overQuota": {
+        "q": "What happens if I go over quota?",
+        "a": "We alert you at 80%. Beyond the quota, calls return rate_limited until the next billing period. You're never charged extra automatically."
+      },
+      "byok": {
+        "q": "What is BYOK?",
+        "a": "Some sources, such as Thailand Post and LINE OA, need a key from your own account. We store it encrypted and only use it to call on your behalf."
+      },
+      "data": {
+        "q": "Do you store what the AI sends?",
+        "a": "We keep each call's input and output for your plan's retention period so you can review it, then delete it automatically. You can delete history at any time."
+      },
+      "selfHost": {
+        "q": "Can I self-host?",
+        "a": "Yes. All adapters are open source on GitHub. The hosted service suits teams that don't want to run servers, quotas, caching and credentials themselves."
+      },
+      "invoice": {
+        "q": "Do you issue Thai tax invoices?",
+        "a": "Yes. Full tax invoices are issued monthly on the Usage & plan page."
+      }
+    }
+  },
+  "catalog": {
+    "title": "Data sources",
+    "description": "Every source and tool, with its license status and the attribution attached to answers.",
+    "searchPlaceholder": "Search sources or tools",
+    "resultCount": "{count, plural, one {# source} other {# sources}}",
+    "provider": "Provider",
+    "minimumPlan": "From the {plan} plan",
+    "emptyFiltered": {
+      "title": "No sources match your search",
+      "description": "Try a shorter term or choose all categories.",
+      "action": "Clear filters"
+    },
+    "detail": {
+      "back": "All sources",
+      "tools": "Tools",
+      "example": "Example",
+      "input": "Input",
+      "output": "Output",
+      "parameters": "Parameters",
+      "licenseNote": "License note",
+      "attribution": "Attribution attached to every answer",
+      "officialSite": "Official website",
+      "cta": "Enable this source",
+      "comingSoonReason": "Not available yet: {reason}"
+    }
+  },
+  "docs": {
+    "title": "Docs",
+    "onThisPage": "On this page",
+    "previous": "Previous",
+    "next": "Next",
+    "openNav": "Open docs navigation",
+    "navLabel": "Docs navigation",
+    "toolReference": {
+      "source": "Source",
+      "cache": "Cache",
+      "parameters": "Parameters",
+      "name": "Name",
+      "type": "Type",
+      "required": "Required",
+      "description": "Description",
+      "noParams": "No parameters",
+      "example": "Example",
+      "filter": "Filter by tool or source"
+    }
+  },
+  "auth": {
+    "title": "Sign in to {product}",
+    "description": "Use your existing LINE or Google account. No new password needed.",
+    "line": "Continue with LINE",
+    "google": "Continue with Google",
+    "redirecting": "Taking you to the next step…",
+    "terms": "By signing in you agree to the <terms>Terms of Service</terms> and <privacy>Privacy Policy</privacy>.",
+    "mockNotice": "Preview build: these buttons go straight to onboarding without real authentication.",
+    "backHome": "Back to home"
+  },
+  "onboarding": {
+    "title": "Get started",
+    "skip": "Skip to dashboard",
+    "progress": "Step {current} of {total}",
+    "steps": {
+      "sources": "Choose sources",
+      "try": "Ask a first question",
+      "plugin": "Connect plugin"
+    },
+    "sources": {
+      "title": "Choose what your AI can see",
+      "description": "We pre-selected sources that are cleared for commercial use and need no key. You can change this later in the dashboard.",
+      "selected": "{count, plural, one {# source} other {# sources}} selected · your AI will see {tools, plural, one {# tool} other {# tools}}",
+      "needsCredential": "Add a credential in the dashboard first",
+      "needsPlan": "Requires the {plan} plan",
+      "saved": "Sources saved",
+      "saveError": "Couldn't save sources. Try again."
+    },
+    "try": {
+      "title": "Ask your first question",
+      "description": "Try a question through your connected plugin. Detection below is simulated.",
+      "question": "What is the name of company {id}, and is it still active?",
+      "waiting": "Waiting for demo plugin detection…",
+      "waitingHint": "Return to the connection step and confirm the demo connection first, then select the plugin in your AI.",
+      "detected": "Plugin detected (demo)",
+      "detectedDescription": "The {client} connection was simulated successfully. You can now try a tool in the Playground.",
+      "goDashboard": "Go to dashboard",
+      "openPlayground": "Try the Playground"
+    },
+    "next": "Next",
+    "back": "Back",
+    "saveAndContinue": "Save and continue",
+    "plugin": {
+      "title": "Connect through a plugin",
+      "description": "Choose your platform, install the plugin and connect your workspace without editing configuration files.",
+      "chooseClient": "Choose your AI platform"
+    }
+  },
+  "overview": {
+    "title": "Overview",
+    "description": "Connection status and usage over the last 30 days",
+    "connection": {
+      "title": "Connected plugins",
+      "description": "Install a plugin to give your AI access to workspace sources",
+      "clients": "Workspace connections (sample data)",
+      "lastSeen": "Last used {time}",
+      "noClients": "No plugins connected yet. Choose a platform above to get started.",
+      "howTo": "Plugin guide"
+    },
+    "kpi": {
+      "calls": "Calls this month",
+      "successRate": "Success rate",
+      "latency": "Average latency",
+      "activeSources": "Active sources",
+      "vsPrevious": "{change} vs previous period",
+      "ofTotal": "of {total} sources",
+      "last30Days": "Last 30 days"
+    },
+    "charts": {
+      "callsPerDay": "Calls per day",
+      "callsBySource": "Calls by source",
+      "calls": "Calls",
+      "errors": "Errors"
+    },
+    "recent": {
+      "title": "Recent calls",
+      "viewAll": "View all logs"
+    },
+    "quota": {
+      "title": "Monthly quota",
+      "used": "{used} of {limit} calls used",
+      "warning": "You've used {percent} of your quota. Beyond the quota, calls are limited until the next billing period.",
+      "upgrade": "Upgrade plan",
+      "period": "Period {start} – {end}"
+    }
+  },
+  "dashboardSources": {
+    "title": "Sources",
+    "description": "Choose which sources your AI can use. Changes apply immediately to every connected client.",
+    "searchPlaceholder": "Search name, provider or tool",
+    "filterCategory": "Category",
+    "filterState": "Enabled",
+    "state": {
+      "all": "All",
+      "enabled": "Enabled",
+      "disabled": "Disabled"
+    },
+    "columns": {
+      "name": "Source",
+      "provider": "Provider",
+      "category": "Category",
+      "tools": "Tools",
+      "status": "Status",
+      "license": "License",
+      "enabled": "Enabled"
+    },
+    "toggleLabel": "Enable {name}",
+    "comingSoon": "Coming soon",
+    "needsCredential": "Credential required",
+    "addCredential": "Add",
+    "requiresPlan": "Requires {plan} or higher",
+    "footer": "Your AI will see {tools, plural, one {# tool} other {# tools}} from {sources, plural, one {# source} other {# sources}}",
+    "enabledToast": "{name} enabled",
+    "disabledToast": "{name} disabled",
+    "toggleError": "Couldn't update {name}. Try again.",
+    "emptyFiltered": {
+      "title": "No sources match these filters",
+      "description": "Clear the search or choose all categories.",
+      "action": "Clear filters"
+    }
+  },
+  "sourceDetail": {
+    "back": "Sources",
+    "provider": "Provider",
+    "category": "Category",
+    "minimumPlan": "Minimum plan",
+    "lastChecked": "Status checked {time}",
+    "enabledLabel": "Available to AI",
+    "statusHistory": "Status, last 24 hours",
+    "statusHistoryHint": "1 bar = 1 hour",
+    "hourLabel": "{time} · {status} · avg {latency} ms",
+    "tools": "Tools",
+    "required": "required",
+    "tryTool": "Try it",
+    "cache": "Cached {duration}",
+    "noCache": "Not cached",
+    "attribution": "Attribution",
+    "attributionHelp": "Your AI receives this text with every answer from this source.",
+    "license": "License",
+    "officialSite": "Official website",
+    "credential": {
+      "title": "Credential",
+      "configured": "Credential configured. This source is called through your account.",
+      "missing": "No credential yet. This source can be enabled after you add your key.",
+      "manage": "Manage credentials",
+      "add": "Add credential"
+    },
+    "emptyTools": {
+      "title": "No tools in this source yet",
+      "description": "Choose another source to explore available tools."
+    },
+    "emptyStatus": "No status history yet. Try refreshing the data.",
+    "refreshStatus": "Refresh status"
+  },
+  "playground": {
+    "title": "Playground",
+    "description": "Pick a tool, fill in the input and press Run. You get exactly what your AI receives.",
+    "selectTool": "Tool",
+    "selectToolPlaceholder": "Choose a tool",
+    "toolHelper": "Only tools from enabled sources are listed.",
+    "input": "Input",
+    "run": "Run",
+    "running": "Running…",
+    "useExample": "Use example",
+    "result": "Result",
+    "tabs": {
+      "formatted": "Result",
+      "raw": "JSON"
+    },
+    "cached": "From cache",
+    "live": "Live",
+    "source": "Source",
+    "fetchedAt": "Fetched {time}",
+    "boolean": {
+      "true": "Yes",
+      "false": "No"
+    },
+    "selectOption": "Choose a value",
+    "noResult": {
+      "title": "No result yet",
+      "description": "Fill in the input and press Run. The result appears here."
+    },
+    "toolError": "The tool returned an error",
+    "requestFailed": "The request failed. Check your connection and press Run again.",
+    "history": {
+      "title": "This session",
+      "description": "Keeps the last 10 runs until you close the tab.",
+      "empty": "No runs in this session yet.",
+      "restore": "Reuse this input",
+      "clear": "Clear history"
+    },
+    "noTools": {
+      "title": "No tools to try yet",
+      "description": "Enable at least one source, then come back here.",
+      "action": "Go to sources"
+    },
+    "unavailable": {
+      "title": "This tool is unavailable",
+      "description": "Its source may be disabled or need a credential. Enable the source first, or choose an available tool.",
+      "action": "Choose an available tool"
+    }
+  },
+  "logs": {
+    "title": "Call logs",
+    "description": "Every tool call with its input, output and source, kept for your plan's retention period.",
+    "filters": {
+      "range": "Time range",
+      "rangeOptions": {
+        "today": "Today",
+        "d7": "7 days",
+        "d30": "30 days",
+        "all": "All"
+      },
+      "status": "Status",
+      "source": "Source",
+      "client": "Client",
+      "allStatuses": "All statuses",
+      "allSources": "All sources",
+      "allClients": "All clients",
+      "reset": "Clear filters"
+    },
+    "columns": {
+      "time": "Time",
+      "tool": "Tool",
+      "client": "Client",
+      "status": "Status",
+      "latency": "Latency",
+      "cached": "Cache"
+    },
+    "status": {
+      "success": "Success",
+      "error": "Error",
+      "rate_limited": "Rate limited"
+    },
+    "cachedYes": "Cached",
+    "sortByLatency": "Sort by latency",
+    "sortByTime": "Sort by time",
+    "pagination": {
+      "summary": "{from}–{to} of {total}",
+      "page": "Page {page} / {pageCount}",
+      "previous": "Previous page",
+      "next": "Next page"
+    },
+    "empty": {
+      "title": "No calls yet",
+      "description": "Ask Claude this question, then come back to this page.",
+      "question": "What is the name of company {id}?"
+    },
+    "emptyFiltered": {
+      "title": "No calls match these filters",
+      "description": "Widen the time range or clear all filters."
+    },
+    "detail": {
+      "title": "Call details",
+      "input": "Input",
+      "output": "Output",
+      "error": "Error",
+      "attribution": "Source",
+      "time": "Time",
+      "client": "Client",
+      "latency": "Latency",
+      "cache": "Cache",
+      "cachedYes": "Served from cache",
+      "cachedNo": "Fetched from source",
+      "callId": "Call ID",
+      "openInPlayground": "Open in Playground"
+    }
+  },
+  "credentials": {
+    "title": "Credentials",
+    "description": "Your own keys and tokens for bring-your-own-key sources. Stored encrypted; only the last 4 characters are shown.",
+    "add": "Add credential",
+    "columns": {
+      "label": "Name",
+      "source": "Source",
+      "value": "Value",
+      "created": "Last set",
+      "lastUsed": "Last used",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "active": "Active",
+      "invalid": "Invalid",
+      "expired": "Expired"
+    },
+    "rotate": "Rotate key",
+    "delete": "Delete",
+    "actionsFor": "Actions for {label}",
+    "form": {
+      "source": "Source",
+      "sourcePlaceholder": "Choose a source",
+      "label": "Name",
+      "labelHelper": "For example: Main account or Test account",
+      "value": "Key or token",
+      "valueHelper": "Copy it from the provider's developer page. It won't be shown again after saving."
+    },
+    "addDialog": {
+      "title": "Add credential",
+      "description": "For sources that are called through your own account.",
+      "submit": "Save credential"
+    },
+    "rotateDialog": {
+      "title": "Rotate {label}",
+      "description": "Paste the new key. The old key stops working as soon as you save.",
+      "submit": "Save new key"
+    },
+    "deleteDialog": {
+      "title": "Delete {label}?",
+      "description": "Your AI can't call {source} tools until you add a new credential, and the source will be disabled.",
+      "confirm": "Delete credential"
+    },
+    "toast": {
+      "added": "Credential added",
+      "rotated": "Key rotated",
+      "deleted": "Credential deleted",
+      "error": "Couldn't save. Try again."
+    },
+    "empty": {
+      "title": "No credentials yet",
+      "description": "Sources like Thailand Post and LINE OA need a key from your own account. Add one and enable the source right away."
+    }
+  },
+  "team": {
+    "title": "Team",
+    "description": "Invite colleagues to this workspace and set their roles.",
+    "invite": "Invite member",
+    "seats": "{used} of {limit} seats used",
+    "columns": {
+      "member": "Member",
+      "role": "Role",
+      "status": "Status",
+      "lastActive": "Last active",
+      "actions": "Actions"
+    },
+    "roles": {
+      "owner": "Owner",
+      "admin": "Admin",
+      "member": "Member",
+      "viewer": "Viewer"
+    },
+    "roleHelp": {
+      "owner": "Manages everything, including billing and deleting the workspace.",
+      "admin": "Manages sources, credentials and members.",
+      "member": "Toggles sources, uses the Playground and views logs.",
+      "viewer": "Read-only access to the dashboard and logs."
+    },
+    "status": {
+      "active": "Active",
+      "invited": "Invited"
+    },
+    "you": "You",
+    "remove": "Remove",
+    "changeRole": "Role for {name}",
+    "inviteDialog": {
+      "title": "Invite member",
+      "description": "We email an invite link that stays valid for 7 days.",
+      "email": "Email",
+      "emailPlaceholder": "name@company.co.th",
+      "role": "Role",
+      "submit": "Send invite"
+    },
+    "removeDialog": {
+      "title": "Remove {name} from this workspace?",
+      "description": "They lose dashboard access immediately. The workspace MCP URL keeps working.",
+      "confirm": "Remove"
+    },
+    "toast": {
+      "invited": "Invite sent to {email}",
+      "roleUpdated": "{name} is now {role}",
+      "removed": "{name} removed",
+      "duplicate": "This email is already in the workspace",
+      "error": "Something went wrong. Try again."
+    },
+    "permissions": {
+      "title": "Per-source permissions",
+      "badge": "Coming soon",
+      "description": "Right now every role sees the same sources across the workspace. Soon you'll be able to decide which roles can toggle or view logs for each source, for example:",
+      "example1": "Accounting: juristic persons and the tax calculator",
+      "example2": "Logistics: Thailand Post tracking",
+      "example3": "Viewers: see logs without inputs that contain personal data"
+    },
+    "empty": {
+      "title": "You're the only one here",
+      "description": "Invite colleagues to help manage sources and credentials."
+    }
+  },
+  "usage": {
+    "title": "Usage & plan",
+    "description": "Quota, usage by source and invoices",
+    "bySource": {
+      "title": "Usage by source",
+      "source": "Source",
+      "calls": "Calls",
+      "share": "Share"
+    },
+    "plans": {
+      "title": "Plans",
+      "current": "Current plan",
+      "upgrade": "Upgrade to {plan}",
+      "change": "Switch to {plan}",
+      "contact": "Contact sales",
+      "requested": "Requested a change to {plan} (preview build, nothing is charged)"
+    },
+    "upgradeCta": {
+      "title": "You're close to your quota",
+      "description": "Enterprise has no fixed call limit and connects your internal systems.",
+      "action": "Talk to sales"
+    },
+    "invoices": {
+      "title": "Invoices",
+      "number": "Number",
+      "period": "Billing period",
+      "plan": "Plan",
+      "amount": "Total (incl. VAT)",
+      "status": "Status",
+      "download": "Download PDF",
+      "downloadFor": "Download {number}",
+      "statuses": {
+        "paid": "Paid",
+        "open": "Open",
+        "void": "Void"
+      },
+      "downloadMock": "Preview build: no PDF available yet",
+      "empty": "No invoices yet. The first one is issued at the end of your first billing period.",
+      "viewPlans": "View plans"
+    },
+    "empty": {
+      "title": "No usage yet",
+      "description": "Run your first tool, then return to see call totals and usage by source.",
+      "action": "Try a tool"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "Manage workspace, connections, language and notifications",
+    "workspace": {
+      "title": "Workspace",
+      "name": "Workspace name",
+      "nameHelper": "Shown in the dashboard and in invite emails",
+      "saved": "Workspace name saved"
+    },
+    "mcp": {
+      "title": "Advanced connections",
+      "description": "For manual MCP setup. Use the plugin flow on Overview for everyday setup.",
+      "regenerate": "Regenerate URL",
+      "dialogTitle": "Regenerate MCP URL?",
+      "dialogDescription": "For a real connection, the old URL would stop working. URL-configured clients need the new endpoint and plugins may need workspace reconnection. This prototype changes local data only.",
+      "confirm": "Regenerate URL",
+      "regenerated": "New demo endpoint created. Reconnect your workspace from Overview.",
+      "advanced": "Show developer MCP endpoint"
+    },
+    "language": {
+      "title": "Language",
+      "description": "Language for the dashboard and docs",
+      "label": "Display language"
+    },
+    "notifications": {
+      "title": "LINE notifications",
+      "description": "Get a LINE message when something needs your attention.",
+      "lineConnected": "LINE connected",
+      "lineNotConnected": "LINE not connected",
+      "connectLine": "Connect LINE",
+      "errorAlerts": "Alert on repeated tool errors",
+      "errorAlertsHelper": "When more than 5 errors happen within 10 minutes",
+      "quotaAlerts": "Alert at 80% of quota",
+      "quotaAlertsHelper": "Once per billing period",
+      "saved": "Notification settings saved",
+      "lineMock": "Preview build: LINE connected without real verification"
+    },
+    "danger": {
+      "title": "Danger zone",
+      "deleteTitle": "Delete workspace",
+      "deleteDescription": "Permanently deletes source settings, call logs, credentials and members. This can't be undone.",
+      "deleteButton": "Delete workspace",
+      "dialogTitle": "Delete workspace {name}?",
+      "dialogDescription": "Type the workspace name below to confirm. This can't be undone.",
+      "confirmLabel": "Workspace name",
+      "confirm": "Delete permanently",
+      "mockToast": "Preview build: nothing was deleted"
+    }
+  },
+  "errors": {
+    "network": {
+      "title": "Can't reach the server",
+      "description": "Check your internet connection and try again."
+    },
+    "server": {
+      "title": "Temporary system problem",
+      "description": "Try again in a moment. If it keeps happening, check the Status page."
+    },
+    "not_found": {
+      "title": "Not found",
+      "description": "It may have been deleted or the link is wrong. Go back and choose again."
+    },
+    "rate_limited": {
+      "title": "Too many requests",
+      "description": "Wait a moment and try again. If it happens often, check your quota on Usage & plan."
+    },
+    "conflict": {
+      "title": "Already exists",
+      "description": "Check the existing entry and edit it instead of adding a new one."
+    },
+    "forbidden": {
+      "title": "Not allowed",
+      "description": "Your role, plan or the source's license doesn't allow this. Ask the workspace owner for access."
+    },
+    "reference": "Reference: {code}",
+    "notFoundPage": {
+      "title": "Page not found",
+      "description": "The link may be mistyped or the page has moved.",
+      "home": "Back to home",
+      "dashboard": "Go to dashboard"
+    }
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidEmail": "Enter a valid email address",
+    "tooShort": "Too short",
+    "tooLong": "Too long",
+    "credentialTooShort": "Keys are at least 8 characters",
+    "invalidNumber": "Must be a number",
+    "invalidInteger": "Must be a whole number",
+    "min": "Must be at least {min}",
+    "max": "Must be at most {max}",
+    "pattern": "Invalid format",
+    "invalidDate": "Use YYYY-MM-DD",
+    "invalidThaiId": "This 13-digit number fails the checksum",
+    "confirmMismatch": "Doesn't match the workspace name"
+  },
+  "plugins": {
+    "label": "Plugin",
+    "demoBadge": "Demo",
+    "demoNotice": "Prototype: no directory listing has been published. Confirmation updates mock data only; it does not install a plugin or authorize a real account.",
+    "install": "Install plugin for {platform}",
+    "reconnect": "Reconnect {platform}",
+    "connected": "{platform} connected (sample data)",
+    "connectedToast": "{platform} plugin connected (demo)",
+    "failed": "Could not connect the plugin. Try confirming again.",
+    "getStarted": "Get started with the {platform} plugin",
+    "guide": "Installation guide",
+    "platformGuide": "Platform documentation",
+    "dialog": {
+      "title": "Connect plugin to {platform}",
+      "description": "Connect {product} to workspace {workspace}. Review access before confirming.",
+      "permissions": "Workspace access",
+      "tools": "Use tools only from sources you have enabled",
+      "logs": "Record calls and count usage against this workspace",
+      "credentials": "BYOK sources use credentials managed in the Hub; no keys need to be pasted into chat",
+      "confirm": "Confirm demo connection"
+    }
+  }
+}

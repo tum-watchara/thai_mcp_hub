@@ -1,0 +1,36 @@
+# Plugin quickstart
+
+## 1. Create a workspace
+
+[Sign in](/login) with LINE or Google, then choose your AI platform during onboarding.
+
+## 2. Connect a plugin
+
+Choose ChatGPT, Claude or Cursor, review workspace access and confirm. The main flow does not require a configuration file or copied URL.
+
+<Callout>
+Confirmation in this prototype updates mock data only. It does not install a platform plugin or start OAuth. Real deployment requires a published plugin and account authorization.
+</Callout>
+
+- [ChatGPT plugin](/docs/connect/chatgpt)
+- [Claude plugin](/docs/connect/claude-desktop)
+- [Cursor plugin](/docs/connect/cursor)
+
+## 3. Choose sources
+
+Enable the sources your AI should use. Add credentials for BYOK sources first. Sources awaiting permission remain unavailable.
+
+## 4. Ask a first question
+
+```text
+What is the name of company 0105561012346, and is it still active?
+```
+
+For the prototype, use the [Playground](/dashboard/playground) to inspect sample results and [Call logs](/dashboard/logs) to review activity. In production, select the installed plugin in your AI before asking.
+
+## Troubleshooting
+
+- Check the workspace and enabled sources.
+- If you skipped installation, return and confirm a demo connection.
+- Real plugin access depends on the platform, account and organization policy.
+- Manual endpoints are under Settings → Advanced connections.

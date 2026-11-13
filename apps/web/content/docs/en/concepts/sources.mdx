@@ -1,0 +1,31 @@
+# Sources
+
+A source is the agency or service where data comes from, such as the Department of Business Development or Thailand Post. Each source has its own tools and can be switched on or off independently.
+
+## License status
+
+Every source has one of three license statuses.
+
+| Status | Meaning | Can be enabled? |
+| --- | --- | --- |
+| Commercial use OK | Open or computed data, usable in business with attribution | Yes |
+| Bring your own key | Called through your own account, e.g. Thailand Post, LINE OA | Yes, after adding a credential |
+| Pending permission | We're requesting permission from the data owner | Not yet — shown as "Coming soon" |
+
+We never enable a source that hasn't been cleared for commercial use, even if the data looks public.
+
+## Operational status
+
+Each source is checked every minute and shown with one of three states:
+
+- **Operational** — responding within normal latency
+- **Degraded** — usable, but slower than usual or partially failing
+- **Down** — the upstream isn't responding; your AI receives an explanatory error
+
+## Enabling and disabling
+
+Changes apply immediately to every connected client. Your AI only sees tools from enabled sources. Disabling sources you don't need helps the AI pick the right tool.
+
+## Minimum plan
+
+Some sources need a higher plan; for example, juristic person data starts at Starter. See [Pricing](/pricing).

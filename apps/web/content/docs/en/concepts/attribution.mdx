@@ -1,0 +1,35 @@
+# Attribution
+
+Every tool result carries an attribution line and the time the data was fetched, so you and anyone reading your AI's answer can trace it back.
+
+## Format
+
+```json
+{
+  "data": { "name_th": "บริษัท สยามบัญชีดิจิทัล จำกัด" },
+  "_meta": {
+    "source": "Department of Business Development (Open-DBD)",
+    "attribution": "Source: Department of Business Development (Open-DBD)",
+    "fetched_at": "2026-11-13T10:42:08+07:00",
+    "cached": false
+  }
+}
+```
+
+## Why attribution matters
+
+- **Verifiable**: open the original document when the numbers matter
+- **Freshness**: see exactly when the data was fetched
+- **License compliance**: many open sources, such as OpenStreetMap, require attribution every time
+
+## Ask your AI to show it
+
+Most assistants show the source on their own when they see `_meta`. To make it consistent, add this to your system prompt or project instructions:
+
+```text
+When you use data from Thai MCP Hub, always end your answer with the source and the fetch time.
+```
+
+<Callout>
+Each source's attribution text is listed on its detail page in the dashboard.
+</Callout>

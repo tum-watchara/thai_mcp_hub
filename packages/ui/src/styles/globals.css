@@ -1,0 +1,95 @@
+@import "./tokens.css";
+
+/* Let Tailwind scan the shared components for class names. */
+@source "../components";
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-subtle: var(--bg-subtle);
+  --color-card: var(--card);
+  --color-foreground: var(--text);
+  --color-muted-foreground: var(--text-muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-hover: var(--hover);
+  --color-overlay: var(--overlay);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-subtle: var(--accent-subtle);
+
+  --color-success: var(--success);
+  --color-success-subtle: var(--success-subtle);
+  --color-success-text: var(--success-text);
+  --color-warning: var(--warning);
+  --color-warning-subtle: var(--warning-subtle);
+  --color-warning-text: var(--warning-text);
+  --color-error: var(--error);
+  --color-error-subtle: var(--error-subtle);
+  --color-error-text: var(--error-text);
+
+  --animate-fade-in: fade-in 120ms ease-out;
+  --animate-slide-in-right: slide-in-right 150ms ease-out;
+  --animate-slide-in-left: slide-in-left 150ms ease-out;
+  --animate-pop-in: pop-in 120ms ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  from {
+    transform: translateX(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes pop-in {
+  from {
+    transform: translate(-50%, -48%) scale(0.98);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    border-color: var(--border);
+  }
+  html,
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+  }
+  ::selection {
+    background-color: var(--accent-subtle);
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}

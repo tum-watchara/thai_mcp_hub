@@ -1,0 +1,985 @@
+{
+  "common": {
+    "copy": "คัดลอก",
+    "copied": "คัดลอกแล้ว",
+    "copyFailed": "คัดลอกไม่สำเร็จ ลองเลือกข้อความแล้วกด Ctrl+C",
+    "close": "ปิด",
+    "cancel": "ยกเลิก",
+    "save": "บันทึก",
+    "saving": "กำลังบันทึก…",
+    "saveFailed": "บันทึกไม่สำเร็จ ลองอีกครั้ง",
+    "retry": "ลองอีกครั้ง",
+    "back": "ย้อนกลับ",
+    "next": "ถัดไป",
+    "previous": "ก่อนหน้า",
+    "viewAll": "ดูทั้งหมด",
+    "optional": "(ไม่บังคับ)",
+    "delete": "ลบ",
+    "deleting": "กำลังลบ…",
+    "comingSoon": "เร็ว ๆ นี้",
+    "never": "ยังไม่เคยใช้",
+    "none": "—",
+    "toolCount": "{count, plural, other {# tools}}",
+    "sourceCount": "{count, plural, other {# แหล่ง}}",
+    "milliseconds": "{value} ms",
+    "duration": {
+      "seconds": "{count} วินาที",
+      "minutes": "{count} นาที",
+      "hours": "{count} ชั่วโมง",
+      "days": "{count} วัน"
+    },
+    "mockNotice": "เวอร์ชันตัวอย่าง ใช้ข้อมูลจำลองทั้งหมด"
+  },
+  "meta": {
+    "description": "เชื่อม ChatGPT, Claude และ Cursor กับข้อมูลไทยผ่าน Plugin ทุกคำตอบมีแหล่งที่มาและเวลา",
+    "landing": "ให้ AI ใช้ข้อมูลไทยที่เชื่อถือได้",
+    "pricing": "ราคา",
+    "catalog": "แหล่งข้อมูล",
+    "docs": "เอกสาร",
+    "login": "เข้าสู่ระบบ",
+    "onboarding": "เริ่มต้นใช้งาน",
+    "overview": "ภาพรวม",
+    "sources": "แหล่งข้อมูล",
+    "playground": "ทดลองเรียก",
+    "logs": "ประวัติการเรียก",
+    "credentials": "Credentials",
+    "team": "ทีม",
+    "usage": "การใช้งานและแพ็กเกจ",
+    "settings": "ตั้งค่า",
+    "notFound": "ไม่พบหน้านี้"
+  },
+  "nav": {
+    "overview": "ภาพรวม",
+    "sources": "แหล่งข้อมูล",
+    "playground": "ทดลองเรียก",
+    "logs": "ประวัติการเรียก",
+    "credentials": "Credentials",
+    "team": "ทีม",
+    "usage": "การใช้งานและแพ็กเกจ",
+    "settings": "ตั้งค่า",
+    "marketing": {
+      "sources": "แหล่งข้อมูล",
+      "pricing": "ราคา",
+      "docs": "เอกสาร"
+    },
+    "footer": {
+      "docs": "เอกสาร",
+      "github": "GitHub",
+      "status": "สถานะระบบ",
+      "terms": "ข้อกำหนดการใช้งาน",
+      "privacy": "นโยบายความเป็นส่วนตัว"
+    },
+    "login": "เข้าสู่ระบบ",
+    "startFree": "เริ่มใช้ฟรี",
+    "dashboard": "แดชบอร์ด",
+    "skipToContent": "ข้ามไปยังเนื้อหา",
+    "mainNavigation": "เมนูหลัก",
+    "openNavigation": "เปิดเมนูนำทาง",
+    "home": "หน้าแรก",
+    "github": "เปิด GitHub ในแท็บใหม่"
+  },
+  "shell": {
+    "search": "ค้นหา",
+    "searchPlaceholder": "ค้นหาหน้า แหล่งข้อมูล หรือ tool",
+    "commandEmpty": "ไม่พบผลลัพธ์ ลองคำค้นอื่น",
+    "commandPages": "หน้า",
+    "commandSources": "แหล่งข้อมูล",
+    "commandTools": "Tools",
+    "commandTitle": "ค้นหาและไปยังหน้า",
+    "docs": "เอกสาร",
+    "planBadge": "แพ็กเกจ {plan}",
+    "userMenu": "เมนูผู้ใช้",
+    "signedInWith": "เข้าสู่ระบบด้วย {provider}",
+    "signOut": "ออกจากระบบ",
+    "workspaces": "Workspace",
+    "switchWorkspace": "สลับ workspace",
+    "workspaceSwitched": "สลับไป {name} แล้ว (ข้อมูลตัวอย่างยังเป็นชุดเดิม)",
+    "language": "ภาษา"
+  },
+  "locale": {
+    "th": "ไทย",
+    "en": "English",
+    "switch": "เปลี่ยนภาษา"
+  },
+  "clients": {
+    "claude": "Claude",
+    "chatgpt": "ChatGPT",
+    "cursor": "Cursor",
+    "api": "API",
+    "tabs": {
+      "claude": "Claude",
+      "chatgpt": "ChatGPT",
+      "cursor": "Cursor"
+    },
+    "steps": {
+      "chatgpt": {
+        "one": "เปิดไดเรกทอรี Plugins ใน ChatGPT แล้วเลือก {product}",
+        "two": "กดติดตั้งและเชื่อมบัญชี เลือก workspace ที่ต้องการใช้งาน",
+        "three": "ตรวจสิทธิ์แล้วเลือก Plugin ในแชตด้วย @ เพื่อเริ่มถามคำถาม"
+      },
+      "claude": {
+        "one": "เปิด Claude → Customize → Plugins แล้วค้นหา {product} ในไดเรกทอรี",
+        "two": "กด Add แล้วเชื่อมบัญชีและเลือก workspace",
+        "three": "เปิดใช้ Plugin และแหล่งข้อมูลที่ต้องการ แล้วเริ่มถามคำถามใน Claude"
+      },
+      "cursor": {
+        "one": "เปิด Cursor → Customize แล้วค้นหา {product} ใน Marketplace",
+        "two": "กด Install เลือกติดตั้งสำหรับผู้ใช้หรือโปรเจกต์ แล้วเชื่อมบัญชี",
+        "three": "ตรวจว่า Plugin เปิดใช้อยู่ แล้วเรียกเครื่องมือผ่าน Agent"
+      }
+    }
+  },
+  "sourceMeta": {
+    "category": {
+      "utilities": "เครื่องมือคำนวณ",
+      "government": "ภาครัฐ",
+      "business": "ธุรกิจ",
+      "open_data": "ข้อมูลเปิด",
+      "geography": "ภูมิศาสตร์",
+      "finance": "การเงิน",
+      "environment": "สิ่งแวดล้อม",
+      "logistics": "ขนส่ง",
+      "messaging": "การสื่อสาร"
+    },
+    "status": {
+      "operational": "ปกติ",
+      "degraded": "ช้ากว่าปกติ",
+      "down": "ใช้งานไม่ได้"
+    },
+    "license": {
+      "commercial_ok": "ใช้เชิงพาณิชย์ได้",
+      "pending_permission": "รออนุญาต",
+      "byok": "ใช้คีย์ของคุณ (BYOK)"
+    },
+    "licenseHelp": {
+      "commercial_ok": "ข้อมูลเผยแพร่ภายใต้เงื่อนไขที่นำไปใช้เชิงพาณิชย์ได้ โดยต้องแสดงที่มา",
+      "pending_permission": "เรากำลังขออนุญาตจากเจ้าของข้อมูล จะเปิดให้ใช้เมื่อได้รับการยืนยัน",
+      "byok": "เรียกผ่านบัญชีและคีย์ของคุณเอง การใช้งานอยู่ภายใต้เงื่อนไขบัญชีของคุณ"
+    },
+    "allCategories": "ทุกหมวดหมู่"
+  },
+  "plans": {
+    "name": {
+      "free": "Free",
+      "starter": "Starter",
+      "pro": "Pro",
+      "enterprise": "Enterprise"
+    },
+    "summary": {
+      "free": "ลองใช้แหล่งข้อมูลแบบคำนวณและข้อมูลภาครัฐพื้นฐาน",
+      "starter": "สำหรับธุรกิจขนาดเล็กที่ใช้ AI ทำงานทุกวัน",
+      "pro": "สำหรับทีมที่ต้องการโควตาสูงและเก็บประวัติยาวขึ้น",
+      "enterprise": "เชื่อม ERP ฐานข้อมูล และระบบภายในเข้ากับ AI"
+    },
+    "perMonth": "/เดือน",
+    "free": "ฟรี",
+    "custom": "ตามตกลง",
+    "calls": "{count} ครั้ง/เดือน",
+    "rateLimit": "{count} ครั้ง/นาที",
+    "seats": "{count, plural, other {# ที่นั่ง}}",
+    "retention": "{days} วัน",
+    "recommended": "แนะนำ",
+    "current": "แพ็กเกจปัจจุบัน",
+    "support": {
+      "community": "ชุมชน (GitHub)",
+      "email": "อีเมล",
+      "priority": "อีเมล ตอบภายใน 1 วันทำการ",
+      "dedicated": "ผู้ดูแลเฉพาะ + SLA"
+    },
+    "feature": {
+      "computed_sources": "เครื่องมือคำนวณ (เลขบัตร ภาษี วันหยุด)",
+      "public_sources": "ข้อมูลภาครัฐและข้อมูลเปิด",
+      "byok_sources": "แหล่งข้อมูลแบบใช้คีย์ของคุณ (BYOK)",
+      "playground": "Playground ทดลองเรียก",
+      "call_logs": "ประวัติการเรียกพร้อม input/output",
+      "line_alerts": "แจ้งเตือนผ่าน LINE",
+      "team": "ทีมและการกำหนดบทบาท",
+      "internal_systems": "เชื่อมระบบภายใน (ERP, ฐานข้อมูล)",
+      "sla": "SLA 99.9%",
+      "dedicated_support": "ผู้ดูแลลูกค้าเฉพาะ"
+    }
+  },
+  "landing": {
+    "hero": {
+      "eyebrow": "DEVELOPER INFRASTRUCTURE",
+      "title": "เชื่อมต่อ AI กับข้อมูลไทยได้ในไม่กี่นาที",
+      "subtitle": "สร้าง จัดการ และ Deploy MCP Server ได้จากที่เดียว พร้อมเชื่อมต่อข้อมูลภาครัฐและ API ธุรกิจ",
+      "primaryCta": "เริ่มใช้งานฟรี",
+      "secondaryCta": "อ่านเอกสาร",
+      "note": "เริ่มจาก workspace ของคุณ แล้วเชื่อม AI ผ่าน Plugin",
+      "deploymentLabel": "รูปแบบการใช้งาน",
+      "deployment": {
+        "openSource": "Open Source",
+        "selfHosted": "Self-hosted",
+        "managedCloud": "Managed Cloud"
+      },
+      "platforms": "ออกแบบสำหรับ ChatGPT, Claude และ Cursor"
+    },
+    "demo": {
+      "label": "ตัวอย่างบทสนทนาใน Claude",
+      "you": "คุณ",
+      "assistant": "Claude",
+      "question": "ช่วยเช็กบริษัทเลขทะเบียน {id} หน่อย ยังดำเนินกิจการอยู่ไหม ทุนจดทะเบียนเท่าไร",
+      "toolCall": "เรียก tool",
+      "toolResult": "ผลลัพธ์จาก tool",
+      "answer": "บริษัท สยามบัญชีดิจิทัล จำกัด ยังดำเนินกิจการอยู่ ทุนจดทะเบียน 5,000,000 บาท จดทะเบียนเมื่อ 14 มีนาคม 2561 สำนักงานตั้งอยู่ที่เขตวัฒนา กรุงเทพมหานคร",
+      "source": "ที่มา: กรมพัฒนาธุรกิจการค้า (Open-DBD)",
+      "fetchedAt": "ดึงข้อมูลเมื่อ 13 พ.ย. 2569 10:42 น.",
+      "latency": "184 ms"
+    },
+    "comparison": {
+      "title": "ทำไมไม่ให้ AI ค้นเว็บเอง",
+      "description": "การค้นเว็บเหมาะกับคำถามทั่วไป แต่งานบัญชี HR และระบบอัตโนมัติต้องการข้อมูลที่ตรวจสอบได้",
+      "aspect": "เรื่อง",
+      "hub": "{product}",
+      "web": "การค้นเว็บของ AI",
+      "rows": {
+        "source": {
+          "label": "แหล่งข้อมูล",
+          "hub": "ดึงจากหน่วยงานหรือผู้ให้บริการโดยตรง",
+          "web": "หน้าเว็บที่ถูกคัดลอกต่อกันมา อาจเก่าหรือผิด"
+        },
+        "timestamp": {
+          "label": "เวลาของข้อมูล",
+          "hub": "ทุกคำตอบมีที่มาและเวลาที่ดึงข้อมูล",
+          "web": "มักไม่รู้ว่าข้อมูลอัปเดตเมื่อไร"
+        },
+        "batch": {
+          "label": "งานจำนวนมาก",
+          "hub": "ตรวจเลขผู้เสียภาษี 500 รายการได้ในครั้งเดียว",
+          "web": "ค้นทีละรายการ ช้าและไม่สม่ำเสมอ"
+        },
+        "automation": {
+          "label": "ระบบอัตโนมัติ",
+          "hub": "ผลลัพธ์เป็นโครงสร้าง JSON เดิมทุกครั้ง",
+          "web": "ข้อความอิสระ ต้องแปลงเองทุกครั้ง"
+        },
+        "internal": {
+          "label": "ข้อมูลภายในองค์กร",
+          "hub": "เชื่อม ERP และฐานข้อมูลของคุณได้ (Enterprise)",
+          "web": "เข้าถึงไม่ได้"
+        }
+      }
+    },
+    "sources": {
+      "title": "แหล่งข้อมูลที่พร้อมใช้",
+      "description": "เราเปิดเฉพาะแหล่งที่ใช้เชิงพาณิชย์ได้จริง แหล่งที่ยังรออนุญาตจะแสดงไว้แต่ยังเปิดใช้ไม่ได้",
+      "viewAll": "ดูแหล่งข้อมูลทั้งหมด",
+      "columns": {
+        "category": "หมวดหมู่",
+        "source": "แหล่งข้อมูล",
+        "tools": "Tools",
+        "license": "สิทธิ์การใช้งาน"
+      }
+    },
+    "steps": {
+      "title": "เริ่มใช้งานใน 3 ขั้นตอน",
+      "description": "เลือกแพลตฟอร์ม เชื่อม workspace แล้วเริ่มใช้งาน",
+      "one": {
+        "title": "เข้าสู่ระบบด้วย LINE หรือ Google",
+        "description": "สร้าง workspace สำหรับจัดการแหล่งข้อมูล สิทธิ์ และการใช้งาน"
+      },
+      "two": {
+        "title": "ติดตั้ง Plugin ใน AI ที่ใช้",
+        "description": "เลือก ChatGPT, Claude หรือ Cursor แล้วเชื่อม Plugin กับ workspace"
+      },
+      "three": {
+        "title": "เลือกแหล่งข้อมูลแล้วเริ่มถาม",
+        "description": "เปิดหรือปิดแหล่งข้อมูลในแดชบอร์ด AI จะเห็นเฉพาะ tools ที่เปิดไว้"
+      }
+    },
+    "plans": {
+      "title": "แพ็กเกจ",
+      "description": "เริ่มฟรี อัปเกรดเมื่อใช้งานจริงจัง ราคายังไม่รวม VAT 7%",
+      "viewPricing": "เปรียบเทียบแพ็กเกจทั้งหมด"
+    },
+    "openSource": {
+      "title": "Adapter เป็นโอเพนซอร์ส",
+      "description": "โค้ดที่ดึงข้อมูลจากแต่ละแหล่งเปิดให้ตรวจสอบและติดตั้งเองได้บน GitHub ส่วนบริการ hosted ดูแลเรื่องโควตา แคช credential และประวัติการเรียกให้",
+      "cta": "ดู adapter บน GitHub"
+    },
+    "playground": {
+        "sectionEyebrow": "ทดลองก่อนเริ่มใช้งาน",
+        "sectionTitle": "ลองเรียกเครื่องมือได้ทันที",
+        "sectionDescription": "เลือกเครื่องมือ ใส่พารามิเตอร์ แล้วดูผลลัพธ์ในรูปแบบที่ AI จะได้รับ โดยใช้ข้อมูลจำลองที่ระบุชัดเจน",
+      "title": "MCP Playground",
+      "environment": "sandbox / thai-mcp-hub",
+      "badge": "ข้อมูลตัวอย่าง",
+      "tool": "เลือกเครื่องมือ",
+      "execute": "Execute",
+      "result": "ผลลัพธ์",
+      "ready": "ตัวอย่างผลลัพธ์",
+      "running": "กำลังจำลองการเรียก",
+      "success": "ทำงานสำเร็จ · ตัวอย่าง",
+      "failed": "เรียกตัวอย่างไม่สำเร็จ",
+      "raw": "ดู Raw JSON",
+      "sampleSource": "แหล่งข้อมูล: Sandbox ตัวอย่าง",
+      "latency": "{ms} ms",
+      "notice": "ข้อมูลจำลองเท่านั้น ไม่ใช่ผลตอบกลับจาก API จริง และไม่นับโควตาหรือบันทึกใน dashboard",
+      "empty": "ยังไม่มีเครื่องมือในตัวอย่าง",
+      "emptyHelp": "เปิดเอกสารเพื่อดูการใช้งาน หรือกลับมาลองใหม่ภายหลัง",
+      "errorHelp": "ลองใช้ค่าตัวอย่าง หรือแก้พารามิเตอร์แล้วกด Execute อีกครั้ง",
+      "company": "ข้อมูลนิติบุคคลตัวอย่าง",
+      "bahtText": "จำนวนเงินเป็นคำอ่าน",
+      "calendar": "วันทำการตัวอย่าง",
+      "workday": "เป็นวันทำการ",
+      "holiday": "เป็นวันหยุด",
+      "fields": {
+        "juristicId": "เลขทะเบียนนิติบุคคล",
+        "status": "สถานะ",
+        "capital": "ทุนจดทะเบียน",
+        "amount": "จำนวนเงิน",
+        "date": "วันที่",
+        "reason": "รายละเอียด"
+      },
+      "docs": "อ่านเอกสาร"
+    }
+  },
+  "pricing": {
+    "title": "ราคา",
+    "description": "เลือกตามปริมาณการเรียกต่อเดือน เปลี่ยนแพ็กเกจได้ทุกเมื่อ ราคายังไม่รวม VAT 7%",
+    "compareTitle": "เปรียบเทียบแพ็กเกจ",
+    "feature": "รายการ",
+    "rows": {
+      "price": "ราคาต่อเดือน",
+      "calls": "จำนวนการเรียก",
+      "rateLimit": "อัตราสูงสุด",
+      "seats": "สมาชิกในทีม",
+      "retention": "เก็บประวัติการเรียก",
+      "support": "การช่วยเหลือ"
+    },
+    "included": "มี",
+    "notIncluded": "ไม่มี",
+    "cta": {
+      "free": "เริ่มใช้ฟรี",
+      "starter": "เลือก Starter",
+      "pro": "เลือก Pro",
+      "enterprise": "ติดต่อฝ่ายขาย"
+    },
+    "faqTitle": "คำถามที่พบบ่อย",
+    "faq": {
+      "count": {
+        "q": "นับการเรียกอย่างไร",
+        "a": "1 ครั้งคือ AI เรียก tool 1 ครั้ง ไม่ว่าผลลัพธ์จะมาจากแคชหรือแหล่งข้อมูลจริง การเรียกที่ผิดพลาดเพราะ input ไม่ถูกต้องไม่นับ"
+      },
+      "overQuota": {
+        "q": "ถ้าใช้เกินโควตาจะเกิดอะไรขึ้น",
+        "a": "ระบบแจ้งเตือนเมื่อใช้ถึง 80% และเมื่อเกินโควตา การเรียกจะได้สถานะ rate_limited จนถึงรอบบิลถัดไป ไม่มีการเรียกเก็บเงินเพิ่มอัตโนมัติ"
+      },
+      "byok": {
+        "q": "BYOK คืออะไร",
+        "a": "แหล่งข้อมูลบางแห่ง เช่น ไปรษณีย์ไทย และ LINE OA ต้องใช้คีย์จากบัญชีของคุณเอง เราเก็บคีย์แบบเข้ารหัสและใช้เรียกแทนคุณเท่านั้น"
+      },
+      "data": {
+        "q": "เราเก็บข้อมูลที่ AI ส่งมาหรือไม่",
+        "a": "เราเก็บ input และ output ของแต่ละการเรียกเพื่อแสดงในประวัติตามระยะเวลาของแพ็กเกจ แล้วลบอัตโนมัติ คุณลบประวัติเองได้ทุกเมื่อ"
+      },
+      "selfHost": {
+        "q": "ติดตั้งเองได้ไหม",
+        "a": "ได้ adapter ทั้งหมดเป็นโอเพนซอร์สบน GitHub บริการ hosted เหมาะเมื่อไม่อยากดูแลเซิร์ฟเวอร์ โควตา แคช และ credential เอง"
+      },
+      "invoice": {
+        "q": "ออกใบกำกับภาษีได้ไหม",
+        "a": "ได้ ใบกำกับภาษีเต็มรูปแบบออกให้ทุกเดือนในหน้าการใช้งานและแพ็กเกจ"
+      }
+    }
+  },
+  "catalog": {
+    "title": "แหล่งข้อมูล",
+    "description": "รายการแหล่งข้อมูลและ tools ทั้งหมด พร้อมสถานะสิทธิ์การใช้งานและข้อความแสดงที่มา",
+    "searchPlaceholder": "ค้นหาแหล่งข้อมูลหรือ tool",
+    "resultCount": "{count, plural, other {# แหล่งข้อมูล}}",
+    "provider": "ผู้ให้บริการ",
+    "minimumPlan": "เริ่มที่แพ็กเกจ {plan}",
+    "emptyFiltered": {
+      "title": "ไม่พบแหล่งข้อมูลที่ตรงกับคำค้น",
+      "description": "ลองคำค้นที่สั้นลง หรือเลือกทุกหมวดหมู่",
+      "action": "ล้างตัวกรอง"
+    },
+    "detail": {
+      "back": "แหล่งข้อมูลทั้งหมด",
+      "tools": "Tools",
+      "example": "ตัวอย่าง",
+      "input": "Input",
+      "output": "Output",
+      "parameters": "พารามิเตอร์",
+      "licenseNote": "หมายเหตุสิทธิ์การใช้งาน",
+      "attribution": "ข้อความแสดงที่มาที่แนบไปกับทุกคำตอบ",
+      "officialSite": "เว็บไซต์ทางการ",
+      "cta": "เปิดใช้แหล่งข้อมูลนี้",
+      "comingSoonReason": "ยังเปิดใช้ไม่ได้: {reason}"
+    }
+  },
+  "docs": {
+    "title": "เอกสาร",
+    "onThisPage": "ในหน้านี้",
+    "previous": "ก่อนหน้า",
+    "next": "ถัดไป",
+    "openNav": "เปิดสารบัญเอกสาร",
+    "navLabel": "สารบัญเอกสาร",
+    "toolReference": {
+      "source": "แหล่งข้อมูล",
+      "cache": "แคช",
+      "parameters": "พารามิเตอร์",
+      "name": "ชื่อ",
+      "type": "ชนิด",
+      "required": "จำเป็น",
+      "description": "คำอธิบาย",
+      "noParams": "ไม่มีพารามิเตอร์",
+      "example": "ตัวอย่าง",
+      "filter": "กรองตาม tool หรือแหล่งข้อมูล"
+    }
+  },
+  "auth": {
+    "title": "เข้าสู่ระบบ {product}",
+    "description": "ใช้บัญชี LINE หรือ Google ที่มีอยู่ ไม่ต้องตั้งรหัสผ่านใหม่",
+    "line": "ดำเนินการต่อด้วย LINE",
+    "google": "ดำเนินการต่อด้วย Google",
+    "redirecting": "กำลังพาไปขั้นตอนถัดไป…",
+    "terms": "การเข้าสู่ระบบถือว่าคุณยอมรับ<terms>ข้อกำหนดการใช้งาน</terms>และ<privacy>นโยบายความเป็นส่วนตัว</privacy>",
+    "mockNotice": "เวอร์ชันตัวอย่าง: ปุ่มจะพาไปขั้นตอนเริ่มต้นใช้งานโดยไม่มีการยืนยันตัวตนจริง",
+    "backHome": "กลับหน้าแรก"
+  },
+  "onboarding": {
+    "title": "เริ่มต้นใช้งาน",
+    "skip": "ข้ามไปแดชบอร์ด",
+    "progress": "ขั้นตอนที่ {current} จาก {total}",
+    "steps": {
+      "sources": "เลือกแหล่งข้อมูล",
+      "try": "ลองถามคำถามแรก",
+      "plugin": "เชื่อม Plugin"
+    },
+    "sources": {
+      "title": "เลือกแหล่งข้อมูลที่ AI จะเห็น",
+      "description": "เราเลือกแหล่งที่ใช้เชิงพาณิชย์ได้และไม่ต้องใช้คีย์ไว้ให้แล้ว เปลี่ยนภายหลังได้ในแดชบอร์ด",
+      "selected": "เลือกแล้ว {count, plural, other {# แหล่ง}} · AI จะเห็น {tools, plural, other {# tools}}",
+      "needsCredential": "เพิ่ม credential ในแดชบอร์ดก่อนจึงเปิดได้",
+      "needsPlan": "ต้องใช้แพ็กเกจ {plan}",
+      "saved": "บันทึกแหล่งข้อมูลแล้ว",
+      "saveError": "บันทึกแหล่งข้อมูลไม่สำเร็จ ลองอีกครั้ง"
+    },
+    "try": {
+      "title": "ลองถามคำถามแรก",
+      "description": "ตัวอย่างการถามผ่าน Plugin ที่เชื่อมไว้ การตรวจพบด้านล่างเป็นสถานะจำลอง",
+      "question": "บริษัทเลขทะเบียน {id} ชื่ออะไร ยังดำเนินกิจการอยู่ไหม",
+      "waiting": "กำลังรอการตรวจพบ Plugin ตัวอย่าง…",
+      "waitingHint": "กลับไปขั้นเชื่อม Plugin และยืนยันการเชื่อมต่อตัวอย่างก่อน แล้วเลือก Plugin ใน AI ที่ใช้",
+      "detected": "ตรวจพบ Plugin แล้ว (ตัวอย่าง)",
+      "detectedDescription": "จำลองการเชื่อม {client} สำเร็จ ลองเรียก tool ใน Playground ต่อได้",
+      "goDashboard": "ไปที่แดชบอร์ด",
+      "openPlayground": "ทดลองใน Playground"
+    },
+    "next": "ถัดไป",
+    "back": "ย้อนกลับ",
+    "saveAndContinue": "บันทึกและไปต่อ",
+    "plugin": {
+      "title": "เชื่อมต่อผ่าน Plugin",
+      "description": "เลือกแพลตฟอร์ม ติดตั้ง Plugin และเชื่อม workspace โดยไม่ต้องแก้ไฟล์ config",
+      "chooseClient": "เลือกแพลตฟอร์มที่คุณใช้"
+    }
+  },
+  "overview": {
+    "title": "ภาพรวม",
+    "description": "สถานะการเชื่อมต่อและการใช้งานในรอบ 30 วันล่าสุด",
+    "connection": {
+      "title": "Plugins ที่เชื่อมต่อ",
+      "description": "ติดตั้ง Plugin เพื่อให้ AI ใช้แหล่งข้อมูลของ workspace",
+      "clients": "การเชื่อมต่อใน workspace (ตัวอย่าง)",
+      "lastSeen": "ใช้ล่าสุด {time}",
+      "noClients": "ยังไม่ได้เชื่อม Plugin เลือกแพลตฟอร์มด้านบนเพื่อเริ่มต้น",
+      "howTo": "คู่มือ Plugin"
+    },
+    "kpi": {
+      "calls": "การเรียกเดือนนี้",
+      "successRate": "อัตราสำเร็จ",
+      "latency": "เวลาตอบสนองเฉลี่ย",
+      "activeSources": "แหล่งข้อมูลที่เปิดใช้",
+      "vsPrevious": "{change} จากรอบก่อน",
+      "ofTotal": "จากทั้งหมด {total} แหล่ง",
+      "last30Days": "30 วันล่าสุด"
+    },
+    "charts": {
+      "callsPerDay": "การเรียกต่อวัน",
+      "callsBySource": "การเรียกแยกตามแหล่งข้อมูล",
+      "calls": "การเรียก",
+      "errors": "ผิดพลาด"
+    },
+    "recent": {
+      "title": "การเรียกล่าสุด",
+      "viewAll": "ดูประวัติทั้งหมด"
+    },
+    "quota": {
+      "title": "โควตาเดือนนี้",
+      "used": "ใช้ไป {used} จาก {limit} ครั้ง",
+      "warning": "ใช้ไปแล้ว {percent} ของโควตา เมื่อเกินโควตา การเรียกจะถูกจำกัดจนถึงรอบบิลถัดไป",
+      "upgrade": "อัปเกรดแพ็กเกจ",
+      "period": "รอบ {start} – {end}"
+    }
+  },
+  "dashboardSources": {
+    "title": "แหล่งข้อมูล",
+    "description": "เลือกว่า AI จะเห็นข้อมูลจากแหล่งใด เปิดหรือปิดแล้วมีผลทันทีกับทุก client ที่เชื่อมอยู่",
+    "searchPlaceholder": "ค้นหาชื่อ ผู้ให้บริการ หรือ tool",
+    "filterCategory": "หมวดหมู่",
+    "filterState": "การเปิดใช้",
+    "state": {
+      "all": "ทั้งหมด",
+      "enabled": "เปิดอยู่",
+      "disabled": "ปิดอยู่"
+    },
+    "columns": {
+      "name": "แหล่งข้อมูล",
+      "provider": "ผู้ให้บริการ",
+      "category": "หมวดหมู่",
+      "tools": "Tools",
+      "status": "สถานะ",
+      "license": "สิทธิ์",
+      "enabled": "เปิดใช้"
+    },
+    "toggleLabel": "เปิดใช้ {name}",
+    "comingSoon": "เร็ว ๆ นี้",
+    "needsCredential": "ต้องเพิ่ม credential",
+    "addCredential": "เพิ่ม",
+    "requiresPlan": "ต้องใช้แพ็กเกจ {plan} ขึ้นไป",
+    "footer": "AI จะเห็น {tools, plural, other {# tools}} จาก {sources, plural, other {# แหล่งข้อมูล}}",
+    "enabledToast": "เปิดใช้ {name} แล้ว",
+    "disabledToast": "ปิด {name} แล้ว",
+    "toggleError": "เปลี่ยนสถานะ {name} ไม่สำเร็จ ลองอีกครั้ง",
+    "emptyFiltered": {
+      "title": "ไม่พบแหล่งข้อมูลที่ตรงกับตัวกรอง",
+      "description": "ลองล้างคำค้นหรือเลือกทุกหมวดหมู่",
+      "action": "ล้างตัวกรอง"
+    }
+  },
+  "sourceDetail": {
+    "back": "แหล่งข้อมูล",
+    "provider": "ผู้ให้บริการ",
+    "category": "หมวดหมู่",
+    "minimumPlan": "แพ็กเกจขั้นต่ำ",
+    "lastChecked": "ตรวจสถานะล่าสุด {time}",
+    "enabledLabel": "เปิดให้ AI ใช้",
+    "statusHistory": "สถานะ 24 ชั่วโมงที่ผ่านมา",
+    "statusHistoryHint": "1 แท่ง = 1 ชั่วโมง",
+    "hourLabel": "{time} · {status} · เฉลี่ย {latency} ms",
+    "tools": "Tools",
+    "required": "จำเป็น",
+    "tryTool": "ทดลองเรียก",
+    "cache": "แคช {duration}",
+    "noCache": "ไม่แคช",
+    "attribution": "ข้อความแสดงที่มา",
+    "attributionHelp": "AI ได้รับข้อความนี้พร้อมทุกคำตอบจากแหล่งนี้",
+    "license": "สิทธิ์การใช้งาน",
+    "officialSite": "เว็บไซต์ทางการ",
+    "credential": {
+      "title": "Credential",
+      "configured": "ตั้งค่า credential แล้ว แหล่งข้อมูลนี้เรียกผ่านบัญชีของคุณ",
+      "missing": "ยังไม่มี credential แหล่งข้อมูลนี้จะเปิดใช้ได้หลังเพิ่มคีย์ของคุณ",
+      "manage": "จัดการ credential",
+      "add": "เพิ่ม credential"
+    },
+    "emptyTools": {
+      "title": "ยังไม่มี tool ในแหล่งข้อมูลนี้",
+      "description": "เลือกแหล่งข้อมูลอื่นเพื่อดู tools ที่พร้อมใช้งาน"
+    },
+    "emptyStatus": "ยังไม่มีประวัติสถานะ ลองโหลดข้อมูลอีกครั้ง",
+    "refreshStatus": "โหลดสถานะอีกครั้ง"
+  },
+  "playground": {
+    "title": "ทดลองเรียก",
+    "description": "เลือก tool กรอก input แล้วกด Run ผลลัพธ์เหมือนกับที่ AI ได้รับทุกอย่าง",
+    "selectTool": "Tool",
+    "selectToolPlaceholder": "เลือก tool",
+    "toolHelper": "แสดงเฉพาะ tools จากแหล่งข้อมูลที่เปิดใช้",
+    "input": "Input",
+    "run": "Run",
+    "running": "กำลังเรียก…",
+    "useExample": "ใช้ค่าตัวอย่าง",
+    "result": "ผลลัพธ์",
+    "tabs": {
+      "formatted": "ผลลัพธ์",
+      "raw": "JSON"
+    },
+    "cached": "ตอบจากแคช",
+    "live": "เรียกจริง",
+    "source": "ที่มา",
+    "fetchedAt": "ดึงข้อมูลเมื่อ {time}",
+    "boolean": {
+      "true": "ใช่",
+      "false": "ไม่ใช่"
+    },
+    "selectOption": "เลือกค่า",
+    "noResult": {
+      "title": "ยังไม่มีผลลัพธ์",
+      "description": "กรอก input แล้วกด Run ผลลัพธ์จะแสดงที่นี่"
+    },
+    "toolError": "Tool ตอบกลับด้วยข้อผิดพลาด",
+    "requestFailed": "ส่งคำขอไม่สำเร็จ ตรวจการเชื่อมต่อแล้วกด Run อีกครั้ง",
+    "history": {
+      "title": "ประวัติในเซสชันนี้",
+      "description": "เก็บ 10 รายการล่าสุด หายไปเมื่อปิดแท็บ",
+      "empty": "ยังไม่มีการเรียกในเซสชันนี้",
+      "restore": "ใช้ input นี้อีกครั้ง",
+      "clear": "ล้างประวัติ"
+    },
+    "noTools": {
+      "title": "ยังไม่มี tool ให้ทดลอง",
+      "description": "เปิดใช้แหล่งข้อมูลอย่างน้อย 1 แหล่งก่อน แล้วกลับมาที่หน้านี้",
+      "action": "ไปที่แหล่งข้อมูล"
+    },
+    "unavailable": {
+      "title": "Tool นี้ยังเรียกใช้ไม่ได้",
+      "description": "แหล่งข้อมูลอาจปิดอยู่หรือต้องเพิ่ม credential เปิดใช้แหล่งข้อมูลก่อน หรือเลือก tool อื่นที่พร้อมใช้งาน",
+      "action": "เลือก tool ที่พร้อมใช้งาน"
+    }
+  },
+  "logs": {
+    "title": "ประวัติการเรียก",
+    "description": "ทุกการเรียก tool พร้อม input, output และที่มา เก็บไว้ตามระยะเวลาของแพ็กเกจ",
+    "filters": {
+      "range": "ช่วงเวลา",
+      "rangeOptions": {
+        "today": "วันนี้",
+        "d7": "7 วัน",
+        "d30": "30 วัน",
+        "all": "ทั้งหมด"
+      },
+      "status": "สถานะ",
+      "source": "แหล่งข้อมูล",
+      "client": "Client",
+      "allStatuses": "ทุกสถานะ",
+      "allSources": "ทุกแหล่งข้อมูล",
+      "allClients": "ทุก client",
+      "reset": "ล้างตัวกรอง"
+    },
+    "columns": {
+      "time": "เวลา",
+      "tool": "Tool",
+      "client": "Client",
+      "status": "สถานะ",
+      "latency": "เวลาตอบสนอง",
+      "cached": "แคช"
+    },
+    "status": {
+      "success": "สำเร็จ",
+      "error": "ผิดพลาด",
+      "rate_limited": "ถูกจำกัดอัตรา"
+    },
+    "cachedYes": "แคช",
+    "sortByLatency": "เรียงตามเวลาตอบสนอง",
+    "sortByTime": "เรียงตามเวลา",
+    "pagination": {
+      "summary": "{from}–{to} จาก {total} รายการ",
+      "page": "หน้า {page} / {pageCount}",
+      "previous": "หน้าก่อน",
+      "next": "หน้าถัดไป"
+    },
+    "empty": {
+      "title": "ยังไม่มีการเรียกใช้",
+      "description": "ลองถาม Claude ด้วยคำถามนี้ แล้วกลับมาดูที่หน้านี้",
+      "question": "บริษัทเลขที่ {id} ชื่ออะไร"
+    },
+    "emptyFiltered": {
+      "title": "ไม่มีการเรียกที่ตรงกับตัวกรอง",
+      "description": "ลองขยายช่วงเวลา หรือล้างตัวกรองทั้งหมด"
+    },
+    "detail": {
+      "title": "รายละเอียดการเรียก",
+      "input": "Input",
+      "output": "Output",
+      "error": "ข้อผิดพลาด",
+      "attribution": "ที่มา",
+      "time": "เวลา",
+      "client": "Client",
+      "latency": "เวลาตอบสนอง",
+      "cache": "แคช",
+      "cachedYes": "ตอบจากแคช",
+      "cachedNo": "เรียกแหล่งข้อมูลจริง",
+      "callId": "Call ID",
+      "openInPlayground": "เปิดใน Playground"
+    }
+  },
+  "credentials": {
+    "title": "Credentials",
+    "description": "คีย์และ token ของคุณเองสำหรับแหล่งข้อมูลแบบ BYOK เก็บแบบเข้ารหัส และแสดงเพียง 4 ตัวท้าย",
+    "add": "เพิ่ม credential",
+    "columns": {
+      "label": "ชื่อ",
+      "source": "แหล่งข้อมูล",
+      "value": "ค่า",
+      "created": "ตั้งค่าล่าสุด",
+      "lastUsed": "ใช้ล่าสุด",
+      "status": "สถานะ",
+      "actions": "การจัดการ"
+    },
+    "status": {
+      "active": "ใช้งานได้",
+      "invalid": "ไม่ถูกต้อง",
+      "expired": "หมดอายุ"
+    },
+    "rotate": "หมุนเวียนคีย์",
+    "delete": "ลบ",
+    "actionsFor": "การจัดการ {label}",
+    "form": {
+      "source": "แหล่งข้อมูล",
+      "sourcePlaceholder": "เลือกแหล่งข้อมูล",
+      "label": "ชื่อที่ใช้เรียก",
+      "labelHelper": "เช่น บัญชีหลัก หรือ บัญชีทดสอบ",
+      "value": "คีย์หรือ token",
+      "valueHelper": "คัดลอกจากหน้า developer ของผู้ให้บริการ หลังบันทึกจะไม่แสดงค่านี้อีก"
+    },
+    "addDialog": {
+      "title": "เพิ่ม credential",
+      "description": "ใช้กับแหล่งข้อมูลที่ต้องเรียกผ่านบัญชีของคุณเอง",
+      "submit": "บันทึก credential"
+    },
+    "rotateDialog": {
+      "title": "หมุนเวียนคีย์ {label}",
+      "description": "วางคีย์ใหม่ คีย์เดิมจะใช้ไม่ได้ทันทีหลังบันทึก",
+      "submit": "บันทึกคีย์ใหม่"
+    },
+    "deleteDialog": {
+      "title": "ลบ {label}?",
+      "description": "AI จะเรียก tools ของ {source} ไม่ได้จนกว่าจะเพิ่ม credential ใหม่ และแหล่งข้อมูลนี้จะถูกปิด",
+      "confirm": "ลบ credential"
+    },
+    "toast": {
+      "added": "เพิ่ม credential แล้ว",
+      "rotated": "หมุนเวียนคีย์แล้ว",
+      "deleted": "ลบ credential แล้ว",
+      "error": "บันทึกไม่สำเร็จ ลองอีกครั้ง"
+    },
+    "empty": {
+      "title": "ยังไม่มี credential",
+      "description": "แหล่งข้อมูลอย่าง Thailand Post และ LINE OA ต้องใช้คีย์จากบัญชีของคุณเอง เพิ่มคีย์แล้วเปิดใช้แหล่งข้อมูลได้ทันที"
+    }
+  },
+  "team": {
+    "title": "ทีม",
+    "description": "เชิญเพื่อนร่วมงานเข้า workspace และกำหนดบทบาท",
+    "invite": "เชิญสมาชิก",
+    "seats": "ใช้ {used} จาก {limit} ที่นั่ง",
+    "columns": {
+      "member": "สมาชิก",
+      "role": "บทบาท",
+      "status": "สถานะ",
+      "lastActive": "ใช้งานล่าสุด",
+      "actions": "การจัดการ"
+    },
+    "roles": {
+      "owner": "เจ้าของ",
+      "admin": "ผู้ดูแล",
+      "member": "สมาชิก",
+      "viewer": "ผู้ดู"
+    },
+    "roleHelp": {
+      "owner": "จัดการทุกอย่าง รวมถึงแพ็กเกจและการลบ workspace",
+      "admin": "จัดการแหล่งข้อมูล credential และสมาชิก",
+      "member": "เปิดปิดแหล่งข้อมูล ใช้ Playground และดูประวัติ",
+      "viewer": "ดูแดชบอร์ดและประวัติได้อย่างเดียว"
+    },
+    "status": {
+      "active": "ใช้งานอยู่",
+      "invited": "รอตอบรับ"
+    },
+    "you": "คุณ",
+    "remove": "นำออก",
+    "changeRole": "บทบาทของ {name}",
+    "inviteDialog": {
+      "title": "เชิญสมาชิก",
+      "description": "ระบบส่งลิงก์เชิญไปทางอีเมล ลิงก์ใช้ได้ 7 วัน",
+      "email": "อีเมล",
+      "emailPlaceholder": "name@company.co.th",
+      "role": "บทบาท",
+      "submit": "ส่งคำเชิญ"
+    },
+    "removeDialog": {
+      "title": "นำ {name} ออกจาก workspace?",
+      "description": "สมาชิกจะเข้าแดชบอร์ดไม่ได้ทันที MCP URL ของ workspace ยังใช้งานได้ตามปกติ",
+      "confirm": "นำออก"
+    },
+    "toast": {
+      "invited": "ส่งคำเชิญถึง {email} แล้ว",
+      "roleUpdated": "เปลี่ยนบทบาทของ {name} เป็น{role}แล้ว",
+      "removed": "นำ {name} ออกแล้ว",
+      "duplicate": "อีเมลนี้อยู่ใน workspace แล้ว",
+      "error": "ทำรายการไม่สำเร็จ ลองอีกครั้ง"
+    },
+    "permissions": {
+      "title": "สิทธิ์ตามแหล่งข้อมูล",
+      "badge": "เร็ว ๆ นี้",
+      "description": "ตอนนี้ทุกบทบาทเห็นแหล่งข้อมูลชุดเดียวกันทั้ง workspace ในอนาคตจะกำหนดได้ว่าบทบาทใดเปิดปิดหรือดูประวัติของแหล่งใดได้ เช่น",
+      "example1": "ฝ่ายบัญชี: ข้อมูลนิติบุคคล และเครื่องคำนวณภาษี",
+      "example2": "ฝ่ายขนส่ง: ติดตามพัสดุไปรษณีย์ไทย",
+      "example3": "ผู้ดู: ดูประวัติได้ แต่ไม่เห็น input ที่มีข้อมูลส่วนบุคคล"
+    },
+    "empty": {
+      "title": "มีแค่คุณใน workspace นี้",
+      "description": "เชิญเพื่อนร่วมงานเพื่อให้ช่วยดูแลแหล่งข้อมูลและ credential"
+    }
+  },
+  "usage": {
+    "title": "การใช้งานและแพ็กเกจ",
+    "description": "โควตา การใช้งานแยกตามแหล่งข้อมูล และใบแจ้งหนี้",
+    "bySource": {
+      "title": "การใช้งานแยกตามแหล่งข้อมูล",
+      "source": "แหล่งข้อมูล",
+      "calls": "การเรียก",
+      "share": "สัดส่วน"
+    },
+    "plans": {
+      "title": "แพ็กเกจ",
+      "current": "แพ็กเกจปัจจุบัน",
+      "upgrade": "อัปเกรดเป็น {plan}",
+      "change": "เปลี่ยนเป็น {plan}",
+      "contact": "ติดต่อฝ่ายขาย",
+      "requested": "ส่งคำขอเปลี่ยนเป็น {plan} แล้ว (เวอร์ชันตัวอย่าง ไม่มีการเรียกเก็บเงิน)"
+    },
+    "upgradeCta": {
+      "title": "ใกล้เต็มโควตาแล้ว",
+      "description": "Enterprise ไม่จำกัดจำนวนการเรียกและเชื่อมระบบภายในได้",
+      "action": "คุยกับฝ่ายขาย"
+    },
+    "invoices": {
+      "title": "ใบแจ้งหนี้",
+      "number": "เลขที่",
+      "period": "รอบบิล",
+      "plan": "แพ็กเกจ",
+      "amount": "ยอดรวม (รวม VAT)",
+      "status": "สถานะ",
+      "download": "ดาวน์โหลด PDF",
+      "downloadFor": "ดาวน์โหลด {number}",
+      "statuses": {
+        "paid": "ชำระแล้ว",
+        "open": "รอชำระ",
+        "void": "ยกเลิก"
+      },
+      "downloadMock": "เวอร์ชันตัวอย่าง: ยังไม่มีไฟล์ PDF",
+      "empty": "ยังไม่มีใบแจ้งหนี้ ใบแรกจะออกเมื่อจบรอบบิลแรก",
+      "viewPlans": "ดูแพ็กเกจ"
+    },
+    "empty": {
+      "title": "ยังไม่มีข้อมูลการใช้งาน",
+      "description": "ทดลองเรียก tool ครั้งแรก แล้วกลับมาดูจำนวนการเรียกและแหล่งข้อมูลที่ใช้",
+      "action": "ทดลองเรียก tool"
+    }
+  },
+  "settings": {
+    "title": "ตั้งค่า",
+    "description": "ตั้งค่า workspace, การเชื่อมต่อ, ภาษา และการแจ้งเตือน",
+    "workspace": {
+      "title": "Workspace",
+      "name": "ชื่อ workspace",
+      "nameHelper": "แสดงในแดชบอร์ดและอีเมลคำเชิญ",
+      "saved": "บันทึกชื่อ workspace แล้ว"
+    },
+    "mcp": {
+      "title": "การเชื่อมต่อขั้นสูง",
+      "description": "สำหรับการตั้งค่า MCP ด้วยตนเอง แนะนำติดตั้ง Plugin จากหน้าภาพรวมสำหรับการใช้งานทั่วไป",
+      "regenerate": "สร้าง URL ใหม่",
+      "dialogTitle": "สร้าง MCP URL ใหม่?",
+      "dialogDescription": "ในการเชื่อมต่อจริง URL เดิมจะใช้ไม่ได้ client ที่ตั้งค่าด้วย URL ต้องอัปเดต endpoint และ Plugin อาจต้องเชื่อม workspace อีกครั้ง เวอร์ชันนี้จำลองเฉพาะข้อมูลในเครื่อง",
+      "confirm": "สร้าง URL ใหม่",
+      "regenerated": "สร้าง endpoint ตัวอย่างใหม่แล้ว เชื่อม workspace อีกครั้งได้ที่หน้าภาพรวม",
+      "advanced": "แสดง MCP endpoint สำหรับนักพัฒนา"
+    },
+    "language": {
+      "title": "ภาษา",
+      "description": "ภาษาของแดชบอร์ดและเอกสาร",
+      "label": "ภาษาที่แสดง"
+    },
+    "notifications": {
+      "title": "การแจ้งเตือนผ่าน LINE",
+      "description": "รับข้อความใน LINE เมื่อมีปัญหาที่ต้องจัดการ",
+      "lineConnected": "เชื่อม LINE แล้ว",
+      "lineNotConnected": "ยังไม่ได้เชื่อม LINE",
+      "connectLine": "เชื่อม LINE",
+      "errorAlerts": "แจ้งเมื่อ tool ผิดพลาดต่อเนื่อง",
+      "errorAlertsHelper": "เมื่อผิดพลาดเกิน 5 ครั้งใน 10 นาที",
+      "quotaAlerts": "แจ้งเมื่อใช้โควตาถึง 80%",
+      "quotaAlertsHelper": "แจ้งครั้งเดียวต่อรอบบิล",
+      "saved": "บันทึกการแจ้งเตือนแล้ว",
+      "lineMock": "เวอร์ชันตัวอย่าง: เชื่อม LINE แล้วโดยไม่มีการยืนยันจริง"
+    },
+    "danger": {
+      "title": "พื้นที่อันตราย",
+      "deleteTitle": "ลบ workspace",
+      "deleteDescription": "ลบแหล่งข้อมูลที่ตั้งค่า ประวัติการเรียก credential และสมาชิกทั้งหมดอย่างถาวร กู้คืนไม่ได้",
+      "deleteButton": "ลบ workspace",
+      "dialogTitle": "ลบ workspace {name}?",
+      "dialogDescription": "พิมพ์ชื่อ workspace ด้านล่างเพื่อยืนยัน การลบนี้ย้อนกลับไม่ได้",
+      "confirmLabel": "ชื่อ workspace",
+      "confirm": "ลบถาวร",
+      "mockToast": "เวอร์ชันตัวอย่าง: ไม่มีการลบข้อมูลจริง"
+    }
+  },
+  "errors": {
+    "network": {
+      "title": "เชื่อมต่อเซิร์ฟเวอร์ไม่ได้",
+      "description": "ตรวจการเชื่อมต่ออินเทอร์เน็ตแล้วลองอีกครั้ง"
+    },
+    "server": {
+      "title": "ระบบขัดข้องชั่วคราว",
+      "description": "ลองอีกครั้งในอีกสักครู่ ถ้ายังไม่ได้ ตรวจสถานะระบบที่หน้า Status"
+    },
+    "not_found": {
+      "title": "ไม่พบข้อมูลที่ต้องการ",
+      "description": "ข้อมูลอาจถูกลบไปแล้วหรือลิงก์ไม่ถูกต้อง กลับไปหน้าก่อนหน้าแล้วเลือกใหม่"
+    },
+    "rate_limited": {
+      "title": "เรียกบ่อยเกินไป",
+      "description": "รอสักครู่แล้วลองใหม่ ถ้าเกิดบ่อย ดูโควตาที่หน้าการใช้งานและแพ็กเกจ"
+    },
+    "conflict": {
+      "title": "ข้อมูลซ้ำกับที่มีอยู่",
+      "description": "ตรวจรายการเดิมก่อน แล้วแก้ไขแทนการเพิ่มใหม่"
+    },
+    "forbidden": {
+      "title": "ทำรายการนี้ไม่ได้",
+      "description": "บทบาท แพ็กเกจ หรือสิทธิ์ของแหล่งข้อมูลไม่อนุญาต ติดต่อเจ้าของ workspace ถ้าต้องการสิทธิ์เพิ่ม"
+    },
+    "reference": "รหัสอ้างอิง: {code}",
+    "notFoundPage": {
+      "title": "ไม่พบหน้านี้",
+      "description": "ลิงก์อาจพิมพ์ผิดหรือหน้าถูกย้ายไปแล้ว",
+      "home": "กลับหน้าแรก",
+      "dashboard": "ไปที่แดชบอร์ด"
+    }
+  },
+  "validation": {
+    "required": "กรุณากรอกช่องนี้",
+    "invalidEmail": "รูปแบบอีเมลไม่ถูกต้อง",
+    "tooShort": "สั้นเกินไป",
+    "tooLong": "ยาวเกินไป",
+    "credentialTooShort": "คีย์ต้องมีอย่างน้อย 8 ตัวอักษร",
+    "invalidNumber": "ต้องเป็นตัวเลข",
+    "invalidInteger": "ต้องเป็นจำนวนเต็ม",
+    "min": "ต้องไม่น้อยกว่า {min}",
+    "max": "ต้องไม่มากกว่า {max}",
+    "pattern": "รูปแบบไม่ถูกต้อง",
+    "invalidDate": "ใช้รูปแบบ YYYY-MM-DD",
+    "invalidThaiId": "เลข 13 หลักไม่ผ่านการตรวจ checksum",
+    "confirmMismatch": "ชื่อไม่ตรงกับ workspace"
+  },
+  "plugins": {
+    "label": "Plugin",
+    "demoBadge": "ตัวอย่าง",
+    "demoNotice": "เวอร์ชันตัวอย่าง: ยังไม่มี Plugin เผยแพร่ในไดเรกทอรี การยืนยันนี้เปลี่ยนเฉพาะข้อมูลจำลอง ไม่ติดตั้งหรืออนุญาตบัญชีจริง",
+    "install": "ติดตั้ง Plugin สำหรับ {platform}",
+    "reconnect": "เชื่อม {platform} อีกครั้ง",
+    "connected": "เชื่อม {platform} แล้ว (ข้อมูลตัวอย่าง)",
+    "connectedToast": "เชื่อม Plugin สำหรับ {platform} แล้ว (ตัวอย่าง)",
+    "failed": "เชื่อม Plugin ไม่สำเร็จ ลองยืนยันอีกครั้ง",
+    "getStarted": "เริ่มเชื่อม Plugin สำหรับ {platform}",
+    "guide": "คู่มือการติดตั้ง",
+    "platformGuide": "เอกสารแพลตฟอร์ม",
+    "dialog": {
+      "title": "เชื่อม Plugin กับ {platform}",
+      "description": "เชื่อม {product} กับ workspace {workspace} โดยตรวจสิทธิ์ก่อนยืนยัน",
+      "permissions": "สิทธิ์ที่จะเชื่อมกับ workspace",
+      "tools": "ใช้เฉพาะ tools จากแหล่งข้อมูลที่คุณเปิดไว้",
+      "logs": "แสดงประวัติการเรียกและนับโควตาใน workspace นี้",
+      "credentials": "แหล่ง BYOK ใช้ credential ที่จัดการใน Hub ไม่ต้องวางคีย์ในแชต",
+      "confirm": "ยืนยันการเชื่อมต่อตัวอย่าง"
+    }
+  }
+}

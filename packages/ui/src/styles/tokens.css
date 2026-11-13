@@ -1,0 +1,53 @@
+/*
+ * Design tokens — the ONLY place raw colour values are allowed.
+ * Components reference these through Tailwind theme colours (see globals.css).
+ */
+:root {
+  /* Core palette */
+  --bg: #ffffff;
+  --bg-subtle: #f7f7f8;
+  --card: #ffffff;
+  --text: #111111;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #2563eb;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --error: #dc2626;
+
+  /* Derived — interaction and status surfaces */
+  --border-strong: #d1d5db;
+  --hover: #f3f4f6;
+  --accent-foreground: #ffffff;
+  --accent-hover: #1d4ed8;
+  --accent-subtle: #eff6ff;
+  --success-subtle: #f0fdf4;
+  --success-text: #15803d;
+  --warning-subtle: #fffbeb;
+  /* Dark amber for text on warning surfaces (AA contrast) */
+  --warning-text: #92400e;
+  --error-subtle: #fef2f2;
+  --error-text: #b91c1c;
+  --overlay: rgb(17 17 17 / 0.32);
+
+  /* Charts — one accent series, neutrals for comparison */
+  --chart-1: var(--accent);
+  --chart-2: #93c5fd;
+  --chart-3: #9ca3af;
+  --chart-grid: var(--border);
+
+  /* Layout */
+  --topbar-height: 56px;
+  --sidebar-width: 240px;
+}
+
+/* Marketing palette is scoped so workspace and documentation tokens stay stable. */
+.marketing-surface {
+  --bg-subtle: #f8fafc;
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --hover: #f1f5f9;
+  font-family: var(--font-thai), var(--font-inter), sans-serif;
+}

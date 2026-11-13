@@ -1,26 +1,19 @@
 {
   "name": "thai-mcp-hub",
-  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+  "packageManager": "pnpm@10.20.0",
+  "engines": {
+    "node": ">=20.9"
   },
-  "dependencies": {
-    "next": "16.4.6",
-    "react": "19.3.0",
-    "react-dom": "19.3.0"
+  "scripts": {
+    "dev": "pnpm --filter @repo/web dev",
+    "dev:turbo": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
-    "@tailwindcss/turbopack": "4.3.3",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.4.6",
-    "tailwindcss": "4.3.3",
-    "typescript": "^5"
+    "turbo": "^2.6.0",
+    "typescript": "^5.9.3"
   }
 }

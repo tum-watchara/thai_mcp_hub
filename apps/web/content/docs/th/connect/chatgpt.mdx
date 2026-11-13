@@ -1,0 +1,21 @@
+# Plugin สำหรับ ChatGPT
+
+## ขั้นตอนสำหรับ Plugin ที่เผยแพร่แล้ว
+
+1. เปิดไดเรกทอรี Plugins ใน ChatGPT แล้วเลือก Thai MCP Hub
+2. ติดตั้ง Plugin และเชื่อมบัญชี เลือก workspace และตรวจสิทธิ์
+3. ในแชตพิมพ์ @ แล้วเลือก Plugin ที่ติดตั้งเพื่อเรียก tools
+
+<Callout>
+ยังไม่มีรายการ Thai MCP Hub เผยแพร่ในไดเรกทอรี ปุ่มเชื่อมใน onboarding และแดชบอร์ดเป็นตัวอย่างเท่านั้น ไม่ได้สร้างหรือเผยแพร่ Plugin จริง
+</Callout>
+
+## ทดลองในเว็บนี้
+
+เลือก ChatGPT ใน onboarding กดยืนยันการเชื่อมต่อตัวอย่าง แล้วเลือกแหล่งข้อมูล สถานะจำลองจะแสดง ChatGPT เป็นแพลตฟอร์มที่เชื่อม
+
+## สำหรับทีมพัฒนา
+
+Plugin รวม MCP server และอาจมี skills หรือส่วนติดต่อผู้ใช้เพิ่มเติม ต้องพัฒนาการยืนยันบัญชีและนำ Plugin เข้าสู่ขั้นตอนทดสอบ/เผยแพร่ก่อนให้ลูกค้าติดตั้ง การเปลี่ยน UX นี้ไม่ได้หมายความว่า MCP ถูกยกเลิก
+
+ดู [Plugin quickstart ของ OpenAI](https://developers.openai.com/plugins/quickstart) และ [การเชื่อม custom MCP เป็น Plugin](https://developers.openai.com/api/docs/guides/custom-mcp-server) สำหรับแนวทางพัฒนา ไม่ใช้ Settings → Connectors แบบเก่าเป็นเส้นทางหลักของผู้ใช้

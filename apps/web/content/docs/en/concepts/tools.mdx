@@ -1,0 +1,50 @@
+# Tools
+
+A tool is a single command your AI can call, such as `dbd.company_lookup` or `holidays.add_workdays`. Tool names are the source ID followed by the operation.
+
+## Anatomy of a tool
+
+Each tool has:
+
+- **A description** the AI uses to decide when to call it
+- **An input schema** listing parameters, types and which are required
+- **An output** that is the same structured JSON every time
+
+Example input for `holidays.add_workdays`:
+
+```json
+{
+  "date": "2026-12-03",
+  "days": 3
+}
+```
+
+Result:
+
+```json
+{
+  "start": "2026-12-03",
+  "days": 3,
+  "result": "2026-12-09",
+  "skipped": ["2026-12-05", "2026-12-06", "2026-12-07"]
+}
+```
+
+## Try before you rely on it
+
+The Playground in the dashboard builds a form from the input schema. Press Run to get exactly what your AI receives, plus latency and cache status.
+
+## Errors
+
+When a call fails, the tool returns a code and a message that explains how to fix it:
+
+```json
+{
+  "error": {
+    "code": "invalid_input",
+    "message": "Invalid juristic ID (checksum failed)"
+  }
+}
+```
+
+See every tool in the [Tool reference](/docs/tool-reference).

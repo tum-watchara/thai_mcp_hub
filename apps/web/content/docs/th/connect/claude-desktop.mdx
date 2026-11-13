@@ -1,0 +1,21 @@
+# Plugin สำหรับ Claude
+
+## ขั้นตอนสำหรับ Plugin ที่เผยแพร่แล้ว
+
+1. เปิด Claude หรือ Claude Desktop → Customize → Plugins แล้วไปที่ไดเรกทอรี
+2. เลือก Thai MCP Hub กด Add และเชื่อมบัญชีตามขั้นตอนของ Plugin
+3. เลือก workspace ตรวจสิทธิ์ และเปิดแหล่งข้อมูลก่อนเริ่มถาม
+
+<Callout>
+ยังไม่มี Thai MCP Hub เผยแพร่ในไดเรกทอรี Claude ขั้นตอนในเว็บนี้จำลองการเชื่อมต่อเท่านั้น ความสามารถที่ใช้ได้จริงขึ้นกับบัญชีและนโยบายองค์กร
+</Callout>
+
+## ทดลองในเว็บนี้
+
+เลือกแท็บ Claude กดยืนยันการเชื่อมต่อตัวอย่าง แล้วทำ onboarding ต่อ สถานะตรวจพบจะแสดง Claude โดยไม่ต้องแก้ claude_desktop_config.json หรือติดตั้ง mcp-remote
+
+## สำหรับทีมพัฒนา
+
+Plugin สามารถรวม MCP connectors และ skills ได้ การเชื่อมข้อมูลยังใช้ MCP อยู่เบื้องหลัง ต้องพัฒนาแพ็กเกจ Plugin การยืนยันบัญชี และเผยแพร่ก่อนใช้งานจริง
+
+ดู [แนวทาง Plugin ของ Claude](https://claude.com/resources/articles/build-plugins-for-claude) และ [ไดเรกทอรีสำหรับติดตั้ง](https://support.claude.com/en/articles/14328846-browse-skills-connectors-and-plugins-in-one-directory)

@@ -1,0 +1,27 @@
+# Caching
+
+To answer quickly and avoid hitting upstream sources unnecessarily, some results are cached for a period that suits each kind of data.
+
+## Cache duration by data type
+
+| Type | Example tool | Cache duration |
+| --- | --- | --- |
+| Computed in-house | `utils.baht_text`, `tax.calc_vat` | Not cached (computed every time) |
+| Changes yearly | `holidays.holidays` | 1 day |
+| Juristic persons | `dbd.company_lookup` | 1 hour |
+| Parcel status | `thaipost.track_parcel` | 5 minutes |
+| Administrative areas | `areas.lookup_subdistrict` | 7 days |
+
+See each tool's cache duration in the [Tool reference](/docs/tool-reference).
+
+## How to tell a cached answer
+
+Results include `_meta.cached` and `_meta.fetched_at`, the time the data was last fetched from the source. Cached calls are labelled "Cached" in the call logs.
+
+## Quota
+
+A cached call counts as one call, like any other, but responds much faster (usually under 30 ms).
+
+<Callout>
+If you need the very latest data, wait for the cache to expire. Bypassing the cache from the AI side isn't available, to keep upstream call rates within each source's terms.
+</Callout>
